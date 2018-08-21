@@ -1,0 +1,105 @@
+@charset "utf-8";
+/*通用*/
+ul,li,p,h1,h2,h3,h4,h5,h6,dl,dt,dd {
+  margin:0px;
+  padding:0px;
+  border:none;
+  list-style:none;
+  font-weight: 400;
+}
+input,button,textarea {border:none;outline: none;}
+html{
+  font-size: 18px !important;
+}
+body {
+  font-family: PingFang-SC-Regular;
+  color:#333;
+  margin:0 auto;
+  padding:0;
+  width: 100%;
+}
+/*页面尺寸*/
+body{
+  min-height: 1334/2px;
+  background-color: #f5f5f5;
+}
+.container{
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+span{
+  display: inline-block;
+}
+a,a:hover{
+  color: #000;
+  text-decoration: none;
+}
+@head:88/2px;
+@foot:98/2px;
+@yellow:#c39528;
+.header,.footer,.main{
+  width: 100%;
+}
+.header,.footer{
+  position: fixed;
+  text-align: center;
+  z-index: 999;
+  background-color: #fff;
+}
+p {
+  position: relative;
+  span {
+    position: absolute;
+  }
+}
+/*头部*/
+.header{
+  height: @head;
+  top:0;
+}
+.headTop{
+  p{
+    font-size: 1.2rem;
+    line-height: @head;
+  }
+}
+.cl{
+  top: (88/2-14)/2px;
+  left: 10px;
+  width: 28/2px;
+  height: 28/2px;
+  background: url("../img/关闭@2x.png") 0 0 no-repeat;
+  background-size: 14px 14px;
+}
+.sd{
+  top: (88/2-4)/2px;
+  right: 20px;
+  width: 40/2px;
+  height: 8/2px;
+  background: url("../img/更多@2x.png") 0 0 no-repeat;
+  background-size: 20px 4px;
+}
+/*main*/
+.main{
+  margin-top: @head;
+  margin-bottom: @foot;
+}
+/* 底部导航*/
+.footer {
+  height: @foot;
+  bottom: 0;
+  font-size: 0.9px;
+  box-shadow: 0 -1px 10px #CCC;
+  color: #333;
+  .footItem{
+    padding: 8px 0 10px 0;
+  }
+  img{
+    width: 24px;
+    height: 24px;
+  }
+}
+.active a,.active{
+  color: @yellow;
+}

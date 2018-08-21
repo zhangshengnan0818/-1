@@ -1,0 +1,122 @@
+@charset "utf-8";
+/*通用*/
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  list-style: none;
+  font-weight: 400;
+}
+input,
+button,
+textarea {
+  border: none;
+  outline: none;
+}
+html {
+  font-size: 18px !important;
+}
+body {
+  font-family: PingFang-SC-Regular;
+  color: #333;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+/*页面尺寸*/
+body {
+  min-height: 667px;
+  background-color: #f5f5f5;
+}
+.container {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+span {
+  display: inline-block;
+}
+a,
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+.header,
+.footer,
+.main {
+  width: 100%;
+}
+.header,
+.footer {
+  position: fixed;
+  text-align: center;
+  z-index: 999;
+  background-color: #fff;
+}
+p {
+  position: relative;
+}
+p span {
+  position: absolute;
+}
+/*头部*/
+.header {
+  height: 44px;
+  top: 0;
+}
+.headTop p {
+  font-size: 1.2rem;
+  line-height: 44px;
+}
+.cl {
+  top: 15px;
+  left: 10px;
+  width: 14px;
+  height: 14px;
+  background: url("../img/关闭@2x.png") 0 0 no-repeat;
+  background-size: 14px 14px;
+}
+.sd {
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 4px;
+  background: url("../img/更多@2x.png") 0 0 no-repeat;
+  background-size: 20px 4px;
+}
+/*main*/
+.main {
+  margin-top: 44px;
+  margin-bottom: 49px;
+}
+/* 底部导航*/
+.footer {
+  height: 49px;
+  bottom: 0;
+  font-size: 0.9px;
+  box-shadow: 0 -1px 10px #cccccc;
+  color: #333;
+}
+.footer .footItem {
+  padding: 8px 0 10px 0;
+}
+.footer img {
+  width: 24px;
+  height: 24px;
+}
+.active a,
+.active {
+  color: #c39528;
+}
+(node:4992) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.

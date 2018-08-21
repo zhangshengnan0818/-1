@@ -1,0 +1,46 @@
+.main > div > div {
+  margin-bottom: 7.5px;
+  background-color: #fff;
+}
+/*banner——star*/
+.banner {
+  height: 150px;
+}
+.banner img {
+  width: 100%;
+}
+.clp {
+  padding: 0;
+}
+/*预约*/
+.yy {
+  padding-bottom: 20px;
+}
+.yy > p {
+  text-align: left;
+  padding-left: 30px;
+  font-size: 1rem;
+  color: #c39528;
+  height: 39px;
+  line-height: 39px;
+  border-bottom: 1px solid #eee;
+}
+.yy > p span {
+  margin: 13.5px 24.5px 0 0;
+  width: 6.5px;
+  height: 12px;
+  right: 0;
+  background: url("../img/more@2x.png") 0 0 no-repeat;
+  background-size: 6.5px 12px;
+}
+.yy hr {
+  margin: 0;
+}
+.yy > div p {
+  font-size: 1rem;
+  padding: 24px 0px 26.5px 0px;
+}
+.yy > div span {
+  font-size: 1rem;
+}
+(node:9204) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="header">
+  <div class="container">
+    <div class="headTop">
+      <p>首页
+        <span class="cl"></span>
+        <span class="sd"></span>
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<div class="main">
+  <div class="container">
+    <!-- top star -->
+    <div class="banner">
+      <img src="img/banner@2x.png" alt=""/>
+    </div>
+    <!-- top end -->
+    <!--今日预约 star-->
+    <div class="yy">
+      <p>
+        今日预约
+        <span></span>
+      </p>
+      <hr/>
+      <div class="row">
+        <div class="col-xs-4">
+          <p>预约数</p>
+          <span>16人</span>
+        </div>
+        <div class="col-xs-4">
+          <p>已到店</p>
+          <span>8人</span>
+        </div><div class="col-xs-4">
+        <p>已爽约</p>
+        <span>16人</span>
+      </div>
+
+      </div>
+    </div>
+    <!--今日预约 end-->
+    <!--本周预约 star-->
+    <div class="yy">
+      <p>
+        本周预约
+        <span></span>
+      </p>
+      <hr/>
+      <div class="row">
+        <div class="col-xs-4">
+          <p>预约数</p>
+          <span>47人</span>
+        </div>
+        <div class="col-xs-4">
+          <p>已到店</p>
+          <span>28/人</span>
+        </div><div class="col-xs-4">
+        <p>已爽约</p>
+        <span>7人</span>
+      </div>
+
+      </div>
+    </div>
+    <!--本周预约 end-->
+  </div>
+
+</div>
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-4">
+        <div class="footItem active">
+          <!--<span class="sy"></span>-->
+          <img src="img/index1.png" alt=""/>
+
+          <p>首页</p>
+        </div>
+
+      </div>
+      <div class="col-xs-4">
+        <div class="footItem">
+          <!--<span class="dt"></span>-->
+          <img src="img/ing.png" alt=""/>
+
+          <p>预约中</p>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="footItem">
+          <!--<span class="yh"></span>-->
+          <img src="img/shop.png" alt=""/>
+
+          <p>店铺</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+
+<!--footer切换-->
+<script>
+
+  $('.footer').on('click','.footItem',function(){
+    if(!$(this).hasClass("active")){
+      var url=$(this).children('p').html();
+//      var str=`${url}.html`;
+//      console.log(str);
+      window.location.href=`${url}.html`;
+//      获取目标元素图片src
+      var picSrc=$(this).children('img').attr('src');
+      picSrc=picSrc.split(".")[0]+ "1."+picSrc.split(".")[1];
+      $(this).children('img').attr('src',picSrc);
+//      添加目标元素CSS
+      $(this).addClass('active');
+//      找到要替换元素src
+      var pic2=$(this).parent().siblings().children('.active');
+//      console.dir(pic2);
+//      移除CSS
+      pic2.removeClass('active');
+//      重置路径
+      var picSrc2=pic2.children('img').attr('src');
+//      console.log(picSrc2);
+      var str=picSrc2.split(".")[0];
+      picSrc2=str.substring(0.,str.length-1)+"."+picSrc2.split(".")[1];
+      pic2.children('img').attr('src',picSrc2);
+    }else{
+      return;
+    }
+  })
+</script>
+<!--<script>-->
+<!--(function () {-->
+<!--var s = document.createElement("script");-->
+<!--s.onload = function () {-->
+<!--bootlint.showLintReportForCurrentDocument([]);-->
+<!--};-->
+<!--s.src = "js/bootlint.js";//路径-->
+<!--document.body.appendChild(s)-->
+<!--})();-->
+<!--</script>-->
+</body>
+</html>
