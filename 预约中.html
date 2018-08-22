@@ -26,10 +26,10 @@
   <div class="container">
     <div class="navTabs row">
       <div class="col-xs-6">
-      <li class="active">
-        <a href="#wait">待审核</a>
-      </li>
-    </div>
+        <li class="active">
+          <a href="#wait">待审核</a>
+        </li>
+      </div>
       <div class="col-xs-6">
         <li class="">
           <a href="#appoint">已预约</a>
@@ -50,11 +50,13 @@
           <div class="userContent">
             <div class="row">
               <p class="col-xs-6">美发师：<span>阿峰店长</span></p>
+
               <p class="col-xs-6">服务：<span>未选择</span></p>
             </div>
             <p class="time">
               <span></span>周二(7.16)16:00
             </p>
+
             <p class="tips">备注：剪发</p>
           </div>
           <div class="userFoot">
@@ -79,11 +81,13 @@
           <div class="userContent">
             <div class="row">
               <p class="col-xs-6">美发师：<span>阿峰店长</span></p>
+
               <p class="col-xs-6">服务：<span>未选择</span></p>
             </div>
             <p class="time">
               <span></span>周二(7.16)16:00
             </p>
+
             <p class="tips">备注：剪发</p>
           </div>
           <div class="userFoot">
@@ -100,7 +104,7 @@
     </div>
 
   </div>
-  </div>
+</div>
 
 </div>
 <div class="footer">
@@ -140,45 +144,45 @@
 <!--<script src="js/bootstrap.js"></script>-->
 <!--内容切换-->
 <script>
-  $('.navTabs').on('click','div li',function(e){
+  $('.navTabs').on('click', 'div li', function (e) {
     e.preventDefault();
-    $this=$(this);
-    if(!$this.hasClass('active')){
+    $this = $(this);
+    if (!$this.hasClass('active')) {
       $this.addClass('active');
       $this.parent().siblings().children().removeClass('active');
       $($this.children('a').attr('href')).toggleClass('curren');
       $($this.children('a').attr('href')).siblings().toggleClass('curren');
-    }else{
+    } else {
       return;
     }
   })
 </script>
 <!--footer切换-->
 <script>
-  $('.footer').on('click','.footItem',function(){
-    if(!$(this).hasClass("active")){
-      var url=$(this).children('p').html();
+  $('.footer').on('click', '.footItem', function () {
+    if (!$(this).hasClass("active")) {
+      var url = $(this).children('p').html();
 //      var str=`${url}.html`;
 //      console.log(str);
-      window.location.href=`${url}.html`;
+      window.location.href = `${url}.html`;
 //      获取目标元素图片src
-      var picSrc=$(this).children('img').attr('src');
-      picSrc=picSrc.split(".")[0]+ "1."+picSrc.split(".")[1];
-      $(this).children('img').attr('src',picSrc);
+      var picSrc = $(this).children('img').attr('src');
+      picSrc = picSrc.split(".")[0] + "1." + picSrc.split(".")[1];
+      $(this).children('img').attr('src', picSrc);
 //      添加目标元素CSS
       $(this).addClass('active');
 //      找到要替换元素src
-      var pic2=$(this).parent().siblings().children('.active');
+      var pic2 = $(this).parent().siblings().children('.active');
 //      console.dir(pic2);
 //      移除CSS
       pic2.removeClass('active');
 //      重置路径
-      var picSrc2=pic2.children('img').attr('src');
+      var picSrc2 = pic2.children('img').attr('src');
 //      console.log(picSrc2);
-      var str=picSrc2.split(".")[0];
-      picSrc2=str.substring(0.,str.length-1)+"."+picSrc2.split(".")[1];
-      pic2.children('img').attr('src',picSrc2);
-    }else{
+      var str = picSrc2.split(".")[0];
+      picSrc2 = str.substring(0., str.length - 1) + "." + picSrc2.split(".")[1];
+      pic2.children('img').attr('src', picSrc2);
+    } else {
       return;
     }
   })

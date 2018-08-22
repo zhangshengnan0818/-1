@@ -43,4 +43,4 @@
 .yy > div span {
   font-size: 1rem;
 }
-(node:9204) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.
+(node:1492) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.

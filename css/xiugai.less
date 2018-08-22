@@ -1,9 +1,10 @@
 @head:88/2px;
 @foot:98/2px;
 @yellow:#c39528;
-.main>div>div{
-  margin-bottom: 15px;
-  background-color: #fff;
+.active{
+  span{
+    border: 1px solid @yellow !important;
+  }
 }
 /*二级底部*/
 .footer{
@@ -38,12 +39,16 @@
 /*主体内容*/
 .main{
   div{
-    p{
+    p.nav2{
       height: 80/2px;
       line-height: 80/2px;
       background-color: #fff;
       border-top: 1px solid #eee;
       font-size: 1.1rem;
+      a{
+        width: 100%;
+        display: block;
+      }
       span{
         width: 16/2px;
         height: 32/2px;
@@ -57,13 +62,100 @@
   }
 }
 div.content{
-  p{
-    font-size:1.2rem;
+  div.info{
+    font-size:1rem;
     text-align: left;
     height: 70/2px;
     line-height: 70/2px;
-    margin-top: 9px;
+    margin-top: 9/2px;
     border: 0;
     padding-left: 39/2px;
+    background-color: #fff;
+    a{
+      width: 100%;
+      display: block;
+    }
+    span{
+      position: static;
+      height: 70/2px;
+      color: @yellow;
+      padding-right: 39/2px;
+      text-align: right;
+      font-size:1rem;
+    }
+    .fr{
+      float: right;
+    }
+    .bg{
+      background: url("../img/more1.png") 0 11px no-repeat;
+      background-size: 14/2px 26/2px;
+    }
+  }
+
+}
+/*预约时间*/
+.yysj{
+  background-color: #fff;
+  //position: relative;
+  overflow: auto;
+  .yysjtop{
+    //position: absolute;
+    top: 0;
+    width: 520px;
+    font-size: 0.7rem;
+    border-top: 1px solid #eee;
+    border-bottom: 2px solid #eee;
+    clear: both;
+    &:after{
+      content:"";
+      height: 0;
+      visibility:hidden;
+      display:block;
+      clear:both;
+    }
+    li{
+      float: left;
+      height: 35px;
+      line-height: 35px;
+      padding: 0 18/2px 0 38/2px;
+    }
+  }
+}
+.yysjbody{
+  height: 127px;
+  font-size: 0.75rem;
+  background-color: #fff;
+  ul{
+    padding: 0 30px;
+
+    &:after{
+      content:"";
+      height: 0;
+      visibility:hidden;
+      display:block;
+      clear:both;
+    }
+    li{
+      float: left;
+      width: 33.333%;
+      height: 37px;
+      line-height: 37px;
+    }
+  }
+  .sj{
+    div{
+      width: 15%;
+      display: inline-block;
+      padding-bottom: 31/2px;
+      span{
+        width: 45px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 10px;
+        border: 1px solid #eee;
+        padding: 0px;
+
+      }
+    }
   }
 }

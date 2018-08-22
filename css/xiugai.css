@@ -1,6 +1,5 @@
-.main > div > div {
-  margin-bottom: 15px;
-  background-color: #fff;
+.active span {
+  border: 1px solid #c39528 !important;
 }
 /*二级底部*/
 .footer {
@@ -29,14 +28,18 @@
   width: 10rem;
 }
 /*主体内容*/
-.main div p {
+.main div p.nav2 {
   height: 40px;
   line-height: 40px;
   background-color: #fff;
   border-top: 1px solid #eee;
   font-size: 1.1rem;
 }
-.main div p span {
+.main div p.nav2 a {
+  width: 100%;
+  display: block;
+}
+.main div p.nav2 span {
   width: 8px;
   height: 16px;
   background: url("../img/返回@2x.png") 0 0 no-repeat;
@@ -44,13 +47,93 @@
   left: 12px;
   top: 12px;
 }
-div.content p {
-  font-size: 1.2rem;
+div.content div.info {
+  font-size: 1rem;
   text-align: left;
   height: 35px;
   line-height: 35px;
-  margin-top: 9px;
+  margin-top: 4.5px;
   border: 0;
   padding-left: 19.5px;
+  background-color: #fff;
 }
-(node:15536) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.
+div.content div.info a {
+  width: 100%;
+  display: block;
+}
+div.content div.info span {
+  position: static;
+  height: 35px;
+  color: #c39528;
+  padding-right: 19.5px;
+  text-align: right;
+  font-size: 1rem;
+}
+div.content div.info .fr {
+  float: right;
+}
+div.content div.info .bg {
+  background: url("../img/more1.png") 0 11px no-repeat;
+  background-size: 7px 13px;
+}
+/*预约时间*/
+.yysj {
+  background-color: #fff;
+  overflow: auto;
+}
+.yysj .yysjtop {
+  top: 0;
+  width: 520px;
+  font-size: 0.7rem;
+  border-top: 1px solid #eee;
+  border-bottom: 2px solid #eee;
+  clear: both;
+}
+.yysj .yysjtop:after {
+  content: "";
+  height: 0;
+  visibility: hidden;
+  display: block;
+  clear: both;
+}
+.yysj .yysjtop li {
+  float: left;
+  height: 35px;
+  line-height: 35px;
+  padding: 0 9px 0 19px;
+}
+.yysjbody {
+  height: 127px;
+  font-size: 0.75rem;
+  background-color: #fff;
+}
+.yysjbody ul {
+  padding: 0 30px;
+}
+.yysjbody ul:after {
+  content: "";
+  height: 0;
+  visibility: hidden;
+  display: block;
+  clear: both;
+}
+.yysjbody ul li {
+  float: left;
+  width: 33.333%;
+  height: 37px;
+  line-height: 37px;
+}
+.yysjbody .sj div {
+  width: 15%;
+  display: inline-block;
+  padding-bottom: 15.5px;
+}
+.yysjbody .sj div span {
+  width: 45px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  padding: 0px;
+}
+(node:15924) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.
