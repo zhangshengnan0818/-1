@@ -26,6 +26,7 @@ textarea {
 }
 html {
   font-size: 18px !important;
+  text-align: center;
 }
 /*@font-face {
   font-family: PingFang-SC-Regular;
@@ -352,4 +353,4 @@ div.info .blan {
 .red {
   color: red;
 }
-(node:10212) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.
+(node:6016) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.
