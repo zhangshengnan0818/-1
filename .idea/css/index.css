@@ -2,10 +2,12 @@
   margin-bottom: 7.5px;
   background-color: #fff;
 }
-/*轮播——star*/
-.carousel-inner > .item > img {
+/*banner——star*/
+.banner {
+  height: 150px;
+}
+.banner img {
   width: 100%;
-  height: auto;
 }
 .clp {
   padding: 0;
@@ -17,7 +19,7 @@
 .yy > p {
   text-align: left;
   padding-left: 30px;
-  font-size: 0.833rem;
+  font-size: 1rem;
   color: #c39528;
   height: 39px;
   line-height: 39px;
@@ -35,10 +37,10 @@
   margin: 0;
 }
 .yy > div p {
-  font-size: 0.833rem;
+  font-size: 1rem;
   padding: 24px 0px 26.5px 0px;
 }
 .yy > div span {
-  font-size: 0.833rem;
+  font-size: 1rem;
 }
-(node:4400) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.
+(node:5116) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.

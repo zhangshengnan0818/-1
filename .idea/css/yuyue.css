@@ -4,6 +4,7 @@
   line-height: 40px;
   width: 120px;
   margin: 0 auto;
+  font-size: 1rem;
 }
 .main li.active {
   border-bottom: 1px solid #c39528;
@@ -11,11 +12,26 @@
 .main > div > div {
   background-color: #fff;
 }
-.tab-head {
+.navTabs {
+  background-color: #fff;
   margin: 4px 0 6px 0;
 }
-.tabItem {
+/*tab内容*/
+.tab-content {
+  position: relative;
+}
+#wait,
+#appoint {
+  position: absolute;
+  top: 0;
+  left: 0;
   opacity: 0;
+  width: 100%;
+  background-color: #fff;
+  transition: opacity 1s linear;
+}
+.curren {
+  opacity: 1 !important;
 }
 .user .userTop p,
 .user .userFoot p {
@@ -27,7 +43,7 @@
 }
 .user .userTop {
   text-align: left;
-  font-size: 0.833rem;
+  font-size: 1rem;
 }
 .user .userTop p {
   height: 40px;
@@ -52,33 +68,15 @@
   width: 6.5px;
   height: 12px;
   margin-top: 14px;
-  background: url("../img/more1.png") 0 0 no-repeat;
+  background: url("../img/more@2x.png") 0 0 no-repeat;
   background-size: 6.5px 12px;
 }
 .user .userContent {
   border-top: 1px solid #f5f5f5;
   border-bottom: 1px solid #f5f5f5;
-  font-size: 0.722rem;
+  font-size: 0.9rem;
   text-align: left;
   padding: 18px 20px;
-}
-.user .userContent .p1 {
-  width: 55%;
-}
-.user .userContent .p2 {
-  width: 40%;
-}
-.user .userContent .p2,
-.user .userContent .p1 {
-  display: inline-block;
-}
-.user .userContent .p2 span,
-.user .userContent .p1 span {
-  right: 35%;
-}
-.user .userContent .p2 span.r0,
-.user .userContent .p1 span.r0 {
-  right: -8px;
 }
 .user .userContent .time {
   padding: 29px 0 24px 31px;
@@ -86,17 +84,18 @@
 .user .userContent .time span {
   width: 15.5px;
   height: 15.5px;
-  margin: 2px 0 0 -32px;
+  margin: 5px 0 0 -32px;
   background: url("../img/时间@2x.png") 0 0 no-repeat;
   background-size: 15.5px 15.5px;
 }
 .user .userContent .tips {
+  font-size: 0.9rem;
   color: #666;
 }
 .user .userFoot p {
   height: 45px;
   line-height: 45px;
-  font-size: 0.888rem;
+  font-size: 1.2rem;
   text-align: left;
   margin-left: 40px;
 }
@@ -113,9 +112,9 @@
   margin: -45px 0;
   height: 45px;
   line-height: 45px;
-  font-size: 0.888rem;
+  font-size: 1.2rem;
   color: #c39528;
   box-shadow: 0 4px 6px #e6e6e6;
   width: 140px;
 }
-(node:8728) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.
+(node:15992) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.

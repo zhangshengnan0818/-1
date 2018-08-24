@@ -1,0 +1,102 @@
+@yellow:#c39528;
+
+div.info{
+   //font-size:0.85rem;
+   text-align: left;
+   height: 80/2px;
+   line-height: 80/2px;
+
+   a{
+     width: 100%;
+     display: block;
+   }
+   span{
+     float: right;
+     height: 80/2px;
+     line-height: 80/2px;
+     text-align: right;
+     &.red a{
+       color: #d80303;
+     }
+   }
+ }
+.checkbox {
+  position: relative;
+  height: 79/2px;
+  background-color: #fff;
+  margin: 0;
+}
+.checkbox input[type='checkbox'] {
+  position: absolute;
+  left: 0; top: 0;
+  width: 20px;  height: 20px;
+  opacity: 0;
+  margin: 0;
+}
+.checkbox label {
+  position: absolute;
+  left: 0; top: 0;
+  height: 79/2px;
+  line-height: 79/2px;
+  font-size: 0.9rem;
+  padding-left: 20px;
+  font-weight: normal;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+/*点击前圆的样式*/
+.checkbox label:before {
+  content: '';
+  position: absolute;
+  right: 20px; top: 10px;
+  width: 20px; height: 20px;
+  border: 1px solid @yellow;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+}
+/*点击后对勾的效果*/
+.checkbox label:after {
+  content: '';
+  position: absolute;
+  right: 26px; top: 12px;
+  width: 6px; height: 12px;
+  border: 0;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  background: #fff;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+}
+.checkbox input[type='checkbox']:checked + label:before {
+  background:@yellow;
+  border-color:@yellow;
+}
+.checkbox input[type='checkbox']:checked + label:after {
+  background:@yellow;
+}
+
+/*编辑店铺*/
+.addZ{
+  text-align: center;
+  width: 100%;
+  a{
+    display: block;
+    background-color: #fff;
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    box-shadow:0 5px 10px rgba(88,88,88,.2);
+    border-radius: 5px;
+    color: @yellow;
+    margin-top: 2rem;
+  }
+}

@@ -6,6 +6,7 @@
       line-height: 80/2px;
       width: 120px;
       margin: 0 auto;
+      font-size: 1rem;
       &.active{
         border-bottom: 1px solid @yellow;
       }
@@ -14,11 +15,26 @@
     background-color: #fff;
   }
 }
-.tab-head{
+.navTabs{
+  background-color: #fff;
   margin: 8/2px 0 12/2px 0;
 }
-.tabItem{
+/*tab内容*/
+.tab-content{
+  position: relative;
+}
+#wait,#appoint{
+  position: absolute;
+  top: 0;
+  left: 0;
   opacity: 0;
+  width: 100%;
+  background-color: #fff;
+  transition: opacity 1s linear;
+}
+.curren{
+  opacity: 1 !important;
+  //width: 100% !important;
 }
 .user{
   .userTop,.userFoot{
@@ -36,7 +52,7 @@
       padding-left: 91/2px;
     }
     text-align: left;
-    font-size: 0.833rem;
+    font-size: 1rem;
     span{
       width: 38/2px;
       height: 38/2px;
@@ -54,7 +70,7 @@
         width: 13/2px;
         height: 24/2px;
         margin-top: (40-12)/2px;
-        background: url("../img/more1.png") 0 0 no-repeat;
+        background: url("../img/more@2x.png") 0 0 no-repeat;
         background-size: 13/2px 24/2px;
       }
     }
@@ -62,36 +78,22 @@
   .userContent{
     border-top: 1px solid #f5f5f5;
     border-bottom: 1px solid #f5f5f5;
-    font-size: 0.722rem;
+    font-size: 0.9rem;
     text-align: left;
     padding: 36/2px 40/2px;
-    .p1{
-      width: 55%;
-    }
-    .p2{
-      width: 40%;
-    }
-    .p2,.p1{
-      display: inline-block;
-      span{
-        right: 35%;
-        &.r0{
-          right: -8px;
-        }
-      }
-    }
     .time{
       padding:58/2px 0 48/2px 62/2px;
 
       span{
         width: 31/2px;
         height: 31/2px;
-        margin: 2px 0 0 -32px;
+        margin: 5px 0 0 -32px;
         background: url("../img/时间@2x.png") 0 0 no-repeat;
         background-size: 31/2px 31/2px;
       }
     }
     .tips{
+      font-size: 0.9rem;
       color: #666;
     }
   }
@@ -99,7 +101,7 @@
     p{
       height: 90/2px;
       line-height: 90/2px;
-      font-size:  0.888rem;
+      font-size:  1.2rem;
       text-align: left;
       margin-left: 80/2px;
       span{
@@ -117,7 +119,7 @@
         margin: -90/2px 0;
         height: 90/2px;
         line-height: 90/2px;
-        font-size: 0.888rem;
+        font-size: 1.2rem;
         color: @yellow;
         box-shadow: 0 4px 6px #e6e6e6;
         width:140px;

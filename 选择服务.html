@@ -7,7 +7,7 @@
   <title></title>
   <link rel="stylesheet" href="css/bootstrap.css"/>
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/xiugai.css">
+  <link rel="stylesheet" href="css/xuanzefw.css">
 </head>
 <body>
 <div class="header">
@@ -27,22 +27,22 @@
     <!--二级top star-->
     <p class="nav2">
       <span></span>
-      <a href="预约中.html">修改</a>
+      <a href="修改.html">选择服务</a>
     </p>
     <!--二级top end-->
 
-    <div class="navTabs row">
-      <div class="col-xs-4">
+    <div class="tab-head row">
+      <div class="col-xs-3">
         <li class="active">
           <a href="#jian">剪发</a>
         </li>
       </div>
-      <div class="col-xs-4">
+      <div class="col-xs-3">
         <li class="">
           <a href="#ran">染发</a>
         </li>
       </div>
-      <div class="col-xs-4">
+      <div class="col-xs-3">
         <li class="">
           <a href="#tang">烫发</a>
         </li>
@@ -50,14 +50,58 @@
     </div>
     </ul>
     <div class="tab-content">
-      <div class="curren" id="jian">
+      <div class="curren tabItem" id="jian">
         <div>
           <p>
             普通剪发
             <b>包含剪发一次</b>
             <i>+10元</i>
+            <span class="active">选择服务</span>
           </p>
-          <span class="active">选择服务</span>
+        </div>
+        <div>
+          <p>
+            高端发型定制
+            <b>包含发型定制一次</b>
+            <i>+20元</i>
+            <span class="active">选择服务</span>
+          </p>
+        </div>
+      </div>
+      <div class="tabItem" id="ran">
+        <div>
+          <p>
+            普通染发
+            <b>包含染发一次</b>
+            <i>+10元</i>
+            <span class="active">选择服务</span>
+          </p>
+        </div>
+        <div>
+          <p>
+            高端染发定制
+            <b>包含染发定制一次</b>
+            <i>+20元</i>
+            <span class="active">选择服务</span>
+          </p>
+        </div>
+      </div>
+      <div class="tabItem" id="tang">
+        <div>
+          <p>
+            普通烫发
+            <b>包含烫发一次</b>
+            <i>+10元</i>
+            <span class="active">选择服务</span>
+          </p>
+        </div>
+        <div>
+          <p>
+            高端烫发定制
+            <b>包含烫发定制一次</b>
+            <i>+20元</i>
+            <span class="active">选择服务</span>
+          </p>
         </div>
       </div>
     </div>
@@ -65,16 +109,16 @@
   </div>
 </div>
 <script src="js/jquery-1.11.3.js"></script>
-<!--<script src="js/bootstrap.js"></script>-->
-<!--<script>-->
-<!--(function () {-->
-<!--var s = document.createElement("script");-->
-<!--s.onload = function () {-->
-<!--bootlint.showLintReportForCurrentDocument([]);-->
-<!--};-->
-<!--s.src = "js/bootlint.js";//路径-->
-<!--document.body.appendChild(s)-->
-<!--})();-->
-<!--</script>-->
+<script src="js/dianpu.js"></script>
+<!--<script>
+(function () {
+var s = document.createElement("script");
+s.onload = function () {
+bootlint.showLintReportForCurrentDocument([]);
+};
+s.src = "js/bootlint.js";//路径
+document.body.appendChild(s)
+})();
+</script>-->
 </body>
 </html>

@@ -24,7 +24,7 @@
 
 <div class="main">
   <div class="container">
-    <div class="navTabs row">
+    <div class="tab-head row">
       <div class="col-xs-6">
         <li class="active">
           <a href="#wait">待审核</a>
@@ -36,9 +36,8 @@
         </li>
       </div>
     </div>
-    </ul>
     <div class="tab-content">
-      <div class="curren" id="wait">
+      <div class="curren tabItem" id="wait">
         <div class="user">
           <div class="userTop">
             <p>
@@ -48,11 +47,9 @@
             </p>
           </div>
           <div class="userContent">
-            <div class="row">
-              <p class="col-xs-6">美发师：<span>阿峰店长</span></p>
+            <p class="p1">美发师：<span>阿峰店长</span></p>
+            <p class="p2">服务：<span class="r0">未选择</span></p>
 
-              <p class="col-xs-6">服务：<span>未选择</span></p>
-            </div>
             <p class="time">
               <span></span>周二(7.16)16:00
             </p>
@@ -69,7 +66,7 @@
           </div>
         </div>
       </div>
-      <div class="" id="appoint">
+      <div class="tabItem" id="appoint">
         <div class="user">
           <div class="userTop">
             <p>
@@ -79,11 +76,9 @@
             </p>
           </div>
           <div class="userContent">
-            <div class="row">
-              <p class="col-xs-6">美发师：<span>阿峰店长</span></p>
+            <p class="p1">美发师：<span>阿峰店长</span></p>
+            <p class="p2">服务：<span class="r0">未选择</span></p>
 
-              <p class="col-xs-6">服务：<span>未选择</span></p>
-            </div>
             <p class="time">
               <span></span>周二(7.16)16:00
             </p>
@@ -104,8 +99,6 @@
     </div>
 
   </div>
-</div>
-
 </div>
 <div class="footer">
   <div class="container">
@@ -143,20 +136,7 @@
 <script src="js/jquery-1.11.3.js"></script>
 <!--<script src="js/bootstrap.js"></script>-->
 <!--内容切换-->
-<script>
-  $('.navTabs').on('click', 'div li', function (e) {
-    e.preventDefault();
-    $this = $(this);
-    if (!$this.hasClass('active')) {
-      $this.addClass('active');
-      $this.parent().siblings().children().removeClass('active');
-      $($this.children('a').attr('href')).toggleClass('curren');
-      $($this.children('a').attr('href')).siblings().toggleClass('curren');
-    } else {
-      return;
-    }
-  })
-</script>
+<script src="js/dianpu.js"></script>
 <!--footer切换-->
 <script>
   $('.footer').on('click', '.footItem', function () {

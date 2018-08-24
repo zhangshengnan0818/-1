@@ -1,81 +1,6 @@
 .active span {
   border: 1px solid #c39528 !important;
 }
-/*二级底部*/
-.footer {
-  padding: 0;
-  font-weight: normal;
-}
-.footer div p {
-  height: 49px;
-  line-height: 49px;
-  font-size: 1.2rem;
-  text-align: left;
-  margin-left: 20px;
-}
-.footer div p span {
-  box-shadow: none;
-  margin: 0;
-}
-.footer div span {
-  float: right;
-  margin: -49px 0;
-  height: 49px;
-  line-height: 49px;
-  font-size: 1.2rem;
-  color: #c39528;
-  box-shadow: 0 4px 6px #e6e6e6;
-  width: 10rem;
-}
-/*主体内容*/
-.main div p.nav2 {
-  height: 40px;
-  line-height: 40px;
-  background-color: #fff;
-  border-top: 1px solid #eee;
-  font-size: 1.1rem;
-}
-.main div p.nav2 a {
-  width: 100%;
-  display: block;
-}
-.main div p.nav2 span {
-  width: 8px;
-  height: 16px;
-  background: url("../img/返回@2x.png") 0 0 no-repeat;
-  background-size: 8px 16px;
-  left: 12px;
-  top: 12px;
-}
-div.content div.info {
-  font-size: 1rem;
-  text-align: left;
-  height: 35px;
-  line-height: 35px;
-  margin-top: 4.5px;
-  border: 0;
-  padding-left: 19.5px;
-  background-color: #fff;
-}
-div.content div.info a {
-  width: 100%;
-  display: block;
-}
-div.content div.info span {
-  position: static;
-  height: 35px;
-  color: #c39528;
-  padding-right: 19.5px;
-  text-align: right;
-  font-size: 1rem;
-}
-div.content div.info .fr {
-  float: right;
-}
-div.content div.info .bg {
-  background: url("../img/more1.png") 0 11px no-repeat;
-  background-size: 7px 13px;
-}
 /*预约时间*/
 .yysj {
   background-color: #fff;
@@ -83,7 +8,7 @@ div.content div.info .bg {
 }
 .yysj .yysjtop {
   top: 0;
-  width: 520px;
+  width: 525px;
   font-size: 0.7rem;
   border-top: 1px solid #eee;
   border-bottom: 2px solid #eee;
@@ -136,4 +61,4 @@ div.content div.info .bg {
   border: 1px solid #eee;
   padding: 0px;
 }
-(node:15924) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.
+(node:3740) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.

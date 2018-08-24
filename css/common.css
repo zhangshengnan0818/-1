@@ -12,8 +12,8 @@ h6,
 dl,
 dt,
 dd {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   border: none;
   list-style: none;
   font-weight: 400;
@@ -27,6 +27,10 @@ textarea {
 html {
   font-size: 18px !important;
 }
+@font-face {
+  font-family: PingFang-SC-Regular;
+  src: url('../fonts/PingFang%20Regular.ttf');
+}
 body {
   font-family: PingFang-SC-Regular;
   color: #333;
@@ -34,9 +38,11 @@ body {
   padding: 0;
   width: 100%;
 }
+.row {
+  margin: 0;
+}
 /*页面尺寸*/
 body {
-  min-height: 667px;
   background-color: #f5f5f5;
 }
 .container {
@@ -51,6 +57,16 @@ a,
 a:hover {
   color: #000;
   text-decoration: none;
+}
+b,
+i {
+  display: inline-block;
+}
+b {
+  font-weight: normal;
+}
+i {
+  font-style: normal;
 }
 .header,
 .footer,
@@ -76,7 +92,7 @@ p span {
   top: 0;
 }
 .headTop p {
-  font-size: 1.2rem;
+  font-size: 0.888rem;
   line-height: 44px;
 }
 .cl {
@@ -104,7 +120,7 @@ p span {
 .footer {
   height: 49px;
   bottom: 0;
-  font-size: 0.9px;
+  font-size: 0.722px;
   box-shadow: 0 -1px 10px #cccccc;
   color: #333;
 }
@@ -112,11 +128,219 @@ p span {
   padding: 8px 0 10px 0;
 }
 .footer img {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 22px;
+}
+.footer a {
+  width: 100px;
+  display: inline-block;
+  height: 49px;
+  line-height: 49px;
+}
+.footer a img {
+  width: 8px;
+  height: 16px;
 }
 .active a,
 .active {
   color: #c39528;
 }
-(node:14220) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.
+/*tab内容*/
+.tab-head {
+  background-color: #fff;
+}
+.tab-head li {
+  height: 40px;
+  line-height: 40px;
+  font-size: 0.833rem;
+}
+.tab-content {
+  position: relative;
+}
+.tabItem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  transition: opacity 1s linear;
+}
+.tabItem > div {
+  background-color: #fff;
+}
+.curren {
+  opacity: 1 !important;
+}
+/*media*/
+/*二级导航*/
+.main div p.nav2 {
+  height: 40px;
+  line-height: 40px;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  font-size: 0.833rem;
+}
+.main div p.nav2 a {
+  width: 100%;
+  display: block;
+}
+.main div p.nav2 span {
+  width: 8px;
+  height: 16px;
+  background: url("../img/返回@2x.png") 0 0 no-repeat;
+  background-size: 8px 16px;
+  top: 12px;
+  left: 12px;
+}
+.main div p.nav2 b {
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
+/*二级底部*/
+.footer .foot2 {
+  padding: 0;
+  font-weight: normal;
+  font-size: 0.944rem;
+}
+.footer .foot2 a {
+  color: #c39528;
+}
+.footer .foot2 p {
+  height: 49px;
+  line-height: 49px;
+  text-align: left;
+  margin-left: 20px;
+}
+.footer .foot2 p span {
+  box-shadow: none;
+  margin: 0;
+}
+.footer .foot2 span {
+  float: right;
+  margin: -49px 0;
+  height: 49px;
+  line-height: 49px;
+  font-size: 0.944rem;
+  color: #c39528;
+  box-shadow: 0 4px 6px #e6e6e6;
+  width: 10rem;
+}
+/*div-info*/
+div[class^=content] {
+  background-color: #fff;
+}
+/*9/2*/
+div.content {
+  margin-top: 4.5px;
+}
+/*5/2*/
+div[class^=content1] {
+  margin-top: 2.5px;
+}
+/*32/2*/
+div[class^=content2] {
+  margin-top: 11.5px;
+}
+/*14/2*/
+div[class^=content3] {
+  margin-top: 7px;
+}
+/*12/2*/
+div[class^=content4] {
+  margin-top: 6px;
+}
+/*最后一个info 无边*/
+div[class^="content"][class$="_2"] .info:last-child {
+  border: none;
+}
+/*第一个info 有边*/
+div[class^="content"][class$="_1"] .info:not(:first-child) {
+  border: none;
+}
+div.info {
+  position: relative;
+  /*2行*/
+  /*30px 头*/
+  font-size: 0.722rem;
+  text-align: left;
+  height: 35px;
+  line-height: 35px;
+  border-bottom: 1px solid #f5f5f5;
+  background-color: #fff;
+  margin-left: 21.5px;
+  margin-right: 15.5px;
+  /*yellow >*/
+  /*black >*/
+  /*span 26 black*/
+  /*span 30 black*/
+}
+div.info.l2 {
+  height: 80px;
+  font-size: 0.666rem;
+}
+div.info.l2 p {
+  color: #c39528;
+  font-size: 0.722rem;
+  height: 30px;
+  line-height: 30px;
+}
+div.info.head {
+  font-size: 0.833rem;
+}
+div.info b {
+  position: absolute;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 20%;
+}
+div.info a {
+  width: 100%;
+  display: block;
+}
+div.info span {
+  width: 70%;
+  position: static;
+  height: 35px;
+  color: #c39528;
+  text-align: right;
+  float: right;
+}
+div.info span input {
+  height: 40px;
+  -web-kit-appearance: none;
+  -moz-appearance: none;
+  width: 80%;
+  text-align: right;
+  outline: 0;
+}
+div.info .fr {
+  float: right;
+}
+div.info .bg1 {
+  background: url("../img/more1.png") 0 0 no-repeat;
+  background-size: 7px 13px;
+  width: 7px;
+  height: 13px;
+  margin-top: 11px;
+  margin-left: 3px;
+}
+div.info .bg2 {
+  width: 7px;
+  height: 13px;
+  background: url("../img/more@2x.png") 0 0 no-repeat;
+  background-size: 7px 13px;
+  margin-top: 11px;
+  margin-left: 3px;
+}
+div.info .bla {
+  font-size: 0.722rem;
+  color: #333;
+}
+div.info .blan {
+  color: #333;
+}
+.red {
+  color: red;
+}
+(node:808) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.

@@ -1,0 +1,32 @@
+.bannerP {
+  background-color: #fff;
+  overflow-x: scroll;
+}
+.bannerP .bannerB {
+  padding: 22px 0;
+  width: 462px;
+}
+.bannerP .bannerB ul:after {
+  content: "";
+  height: 0;
+  visibility: hidden;
+  display: block;
+  clear: both;
+}
+.bannerP .bannerB li {
+  float: left;
+  width: 154px;
+}
+.bannerP .bannerB li .pic {
+  width: 110px;
+  height: 75px;
+  margin: 0 auto;
+}
+.bannerP .bannerB li .pic img {
+  width: 100%;
+  height: auto;
+}
+.bannerP .bannerB li a {
+  font-size: 0.666rem;
+}
+(node:14196) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.
