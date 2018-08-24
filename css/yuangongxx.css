@@ -102,4 +102,4 @@ div.info span.red a {
   color: #c39528;
   margin-top: 2rem;
 }
-(node:16288) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.
+(node:6420) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.

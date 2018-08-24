@@ -8,7 +8,7 @@
 }
 .yysj .yysjtop {
   top: 0;
-  width: 525px;
+  width: 735px;
   font-size: 0.7rem;
   border-top: 1px solid #eee;
   border-bottom: 2px solid #eee;
@@ -61,4 +61,4 @@
   border: 1px solid #eee;
   padding: 0px;
 }
-(node:3740) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.
+(node:12320) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.

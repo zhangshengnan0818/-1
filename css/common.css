@@ -27,12 +27,12 @@ textarea {
 html {
   font-size: 18px !important;
 }
-@font-face {
+/*@font-face {
   font-family: PingFang-SC-Regular;
   src: url('../fonts/PingFang%20Regular.ttf');
-}
+}*/
 body {
-  font-family: PingFang-SC-Regular;
+  font-family: PingFang Regular, Roboto-Regular, "微软雅黑";
   color: #333;
   margin: 0 auto;
   padding: 0;
@@ -111,6 +111,39 @@ p span {
   background: url("../img/更多@2x.png") 0 0 no-repeat;
   background-size: 20px 4px;
 }
+/*二级头部固定*/
+p.nav2 {
+  position: fixed;
+  top: 44px;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 40px;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  font-size: 0.833rem;
+  text-align: center;
+}
+p.nav2 a {
+  width: 100%;
+  display: block;
+}
+p.nav2 span {
+  width: 8px;
+  height: 16px;
+  background: url("../img/返回@2x.png") 0 0 no-repeat;
+  background-size: 8px 16px;
+  top: 12px;
+  left: 12px;
+}
+p.nav2 b {
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
+p.nav2 + .main {
+  margin-top: 84px;
+}
 /*main*/
 .main {
   margin-top: 44px;
@@ -173,30 +206,6 @@ p span {
 }
 /*media*/
 /*二级导航*/
-.main div p.nav2 {
-  height: 40px;
-  line-height: 40px;
-  background-color: #fff;
-  border-top: 1px solid #eee;
-  font-size: 0.833rem;
-}
-.main div p.nav2 a {
-  width: 100%;
-  display: block;
-}
-.main div p.nav2 span {
-  width: 8px;
-  height: 16px;
-  background: url("../img/返回@2x.png") 0 0 no-repeat;
-  background-size: 8px 16px;
-  top: 12px;
-  left: 12px;
-}
-.main div p.nav2 b {
-  position: absolute;
-  top: 0;
-  right: 15px;
-}
 /*二级底部*/
 .footer .foot2 {
   padding: 0;
@@ -343,4 +352,4 @@ div.info .blan {
 .red {
   color: red;
 }
-(node:808) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.
+(node:10212) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.

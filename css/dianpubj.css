@@ -29,4 +29,4 @@
 .bannerP .bannerB li a {
   font-size: 0.666rem;
 }
-(node:14196) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.
+(node:12828) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.
