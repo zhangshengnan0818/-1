@@ -45,6 +45,9 @@ $('.footer').on('click', '.footItem', function () {
 /*footer切换-end*/
 
 /*轮播互动切换-star*/
+$('#bannerAd').carousel({
+  interval: 2000
+});
 $(function () {
   // 获取手指在轮播图元素上的一个滑动方向（左右）
 
