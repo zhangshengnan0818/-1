@@ -502,4 +502,7 @@ div[class^="info"] .blan {
 .addZ a {
   color: #c39528;
 }
-(node:17580) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.
+.media-left {
+  outline: none;
+}
+(node:4916) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.
