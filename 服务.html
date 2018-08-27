@@ -7,26 +7,27 @@
   <title></title>
   <link rel="stylesheet" href="css/bootstrap.css"/>
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/guanli.css">
   <link rel="stylesheet" href="css/hdsc.css">
+  <link rel="stylesheet" href="css/modal.css">
 </head>
 <body>
 <!--删除模态框-->
 <div class="modal" id="del"><!--全屏-->
-  <div class="modalDialog"><!--相对定位-->
-    <div class="modalContent">
-      <div class="modalHead">
-        <h2>提示</h2>
-      </div>
-      <div class="modalBody">
-        <p>是否删除此种类</p>
-      </div>
-      <div class="modalFoot">
-        <a href="#" class="cancel">取消</a>
-        <a href="#" class="ok">确认</a>
-      </div>
+<div class="modalDialog"><!--相对定位-->
+  <div class="modalContent">
+    <div class="modalHead">
+      <h2>提示</h2>
+    </div>
+    <div class="modalBody">
+      <p>是否删除此种类</p>
+    </div>
+    <div class="modalFoot">
+      <a href="#" class="cancel">取消</a>
+      <a href="#" class="ok">确认</a>
     </div>
   </div>
+</div>
 </div>
 <!--添加模态框-->
 <div class="modal" id="add"><!--全屏-->
@@ -45,6 +46,8 @@
     </div>
   </div>
 </div>
+
+
 <div class="header">
   <div class="container">
     <div class="headTop">
@@ -58,29 +61,29 @@
 </div>
 <p class="nav2">
   <span></span>
-  <a href="服务.html">剪发</a>
-  <b ><a href="#" class="active" id="delC">管理</a></b>
+  <a href="店铺管理.html">服务</a>
+  <b><a href="#" class="active">管理</a></b>
 </p>
 <div class="main">
   <div class="container">
-
     <div class="item_list">
       <div class='item_wrap'>
         <div class="content4_1 item_top">
           <div class="info head">
             <a href="剪发.html">
-              类型
+              种类
               <span class="fr bg2"></span>
               <span class="fr blan">剪发</span>
             </a>
           </div>
           <div class="info">
-            价格
+            普通剪发
+            <b class="fr">包含洗、剪、吹各一次</b>
             <span>&yen;30/次</span>
           </div>
           <div class="info">
-            简介
-            <span class="blan">包含洗、剪、吹各一次</span>
+            高端发型设计
+            <span>&yen;60/次</span>
           </div>
         </div>
         <div class="item_del">删除</div>
@@ -89,36 +92,19 @@
         <div class="content4_1 item_top">
           <div class="info head">
             <a href="#">
-              类型
+              种类
               <span class="fr bg2"></span>
-              <span class="fr blan">高端发型设计</span>
+              <span class="fr blan">染烫</span>
             </a>
           </div>
           <div class="info">
-            价格
+            普通染烫
+            <b class="fr">包含染、烫各一次</b>
+            <span>&yen;30/次</span>
+          </div>
+          <div class="info">
+            高端发型设计
             <span>&yen;60/次</span>
-          </div>
-          <div class="info">
-            简介
-            <span class="blan">店长为您量身打造适合您的发型</span>
-          </div>
-        </div>
-        <div class="item_del">删除</div>
-      </div>
-      <div class='item_wrap'>
-        <div class="content4_1 item_top">
-          <div class="info head">
-            类型
-            <span class="fr bg2"></span>
-            <span class="red">未命名</span>
-          </div>
-          <div class="info">
-            价格
-            <span>&yen;0/次</span>
-          </div>
-          <div class="info">
-            简介
-            <span class="blan"><input type="text" placeholder="请输入简介"/></span>
           </div>
         </div>
         <div class="item_del">删除</div>
@@ -126,8 +112,8 @@
     </div>
 
     <div class="addZ">
-      <a href="类型命名.html">
-        新增类型
+      <a href="#" id="add1">
+        新增种类
       </a>
     </div>
   </div>
@@ -144,16 +130,6 @@
 </div>
 <script src="js/jquery-1.11.3.js"></script>
 <script src="js/touch.js"></script>
-<!--<script src="js/bootstrap.js"></script>-->
-<!--<script>-->
-<!--(function () {-->
-<!--var s = document.createElement("script");-->
-<!--s.onload = function () {-->
-<!--bootlint.showLintReportForCurrentDocument([]);-->
-<!--};-->
-<!--s.src = "js/bootlint.js";//路径-->
-<!--document.body.appendChild(s)-->
-<!--})();-->
-<!--</script>-->
+
 </body>
 </html>

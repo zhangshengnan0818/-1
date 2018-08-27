@@ -26,7 +26,6 @@ textarea {
 }
 html {
   font-size: 18px !important;
-  text-align: center;
 }
 /*@font-face {
   font-family: PingFang-SC-Regular;
@@ -38,6 +37,15 @@ body {
   margin: 0 auto;
   padding: 0;
   width: 100%;
+}
+::-webkit-input-placeholder {
+  color: #d7d6d6;
+}
+::-moz-placeholder {
+  color: #d7d6d6;
+}
+:-ms-input-placeholder {
+  color: #d7d6d6;
 }
 .row {
   margin: 0;
@@ -124,6 +132,7 @@ p.nav2 {
   border-top: 1px solid #eee;
   font-size: 0.833rem;
   text-align: center;
+  z-index: 999;
 }
 p.nav2 a {
   width: 100%;
@@ -206,7 +215,6 @@ p.nav2 + .main {
   opacity: 1 !important;
 }
 /*media*/
-/*二级导航*/
 /*二级底部*/
 .footer .foot2 {
   padding: 0;
@@ -261,17 +269,107 @@ div[class^=content4] {
   margin-top: 6px;
 }
 /*最后一个info 无边*/
-div[class^="content"][class$="_2"] .info:last-child {
+div[class^="content"][class$="_2"] .info:last-child,
+div[class^="content"][class$="_2"] .info2:last-child {
   border: none;
 }
 /*第一个info 有边*/
 div[class^="content"][class$="_1"] .info:not(:first-child) {
   border: none;
 }
-div.info {
+div.checkbox,
+.radio {
+  border-bottom: 1px solid #f5f5f5;
+}
+div.checkbox span,
+.radio span {
+  height: 40px;
+  line-height: 40px;
+  font-size: 0.833rem;
+}
+.checkbox,
+.radio {
   position: relative;
+  height: 39.5px;
+  background-color: #fff;
+  margin: 0;
+}
+.checkbox input[type='checkbox'],
+.radio input[type='radio'] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  margin: 0;
+}
+.checkbox label,
+.radio label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 40px;
+  line-height: 40px;
+  font-size: 0.833rem;
+  padding-left: 20px;
+  font-weight: normal;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+/*点击前圆的样式*/
+.checkbox label:before,
+.radio label:before {
+  content: '';
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #c39528;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+}
+/*点击后对勾的效果*/
+.checkbox label:after,
+.radio label:after {
+  content: '';
+  position: absolute;
+  right: 26px;
+  top: 12px;
+  width: 6px;
+  height: 12px;
+  border: 0;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  background: #fff;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+}
+.checkbox input[type='checkbox']:checked + label:before,
+.radio input[type='radio']:checked + label:before {
+  background: #c39528;
+  border-color: #c39528;
+}
+.checkbox input[type='checkbox']:checked + label:after,
+.radio input[type='radio']:checked + label:after {
+  background: #c39528;
+}
+div[class^="info"] {
+  position: relative;
+  height: 40px;
+  line-height: 40px;
   /*2行*/
   /*30px 头*/
+  /*p input*/
   font-size: 0.722rem;
   text-align: left;
   height: 35px;
@@ -285,30 +383,57 @@ div.info {
   /*span 26 black*/
   /*span 30 black*/
 }
-div.info.l2 {
+div[class^="info"].info2 {
+  height: 70px;
+  line-height: 70px;
+}
+div[class^="info"].info2 span.bg2 {
+  margin-top: 31.5px;
+}
+div[class^="info"].info2 span.img {
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  background-color: #f5f5f5;
+  margin: 7.5px;
+}
+div[class^="info"].l2 {
   height: 80px;
   font-size: 0.666rem;
 }
-div.info.l2 p {
+div[class^="info"].l2 p {
   color: #c39528;
   font-size: 0.722rem;
   height: 30px;
   line-height: 30px;
 }
-div.info.head {
+div[class^="info"].head {
   font-size: 0.833rem;
 }
-div.info b {
+div[class^="info"] b {
   position: absolute;
   height: 40px;
   line-height: 40px;
   margin-left: 20%;
 }
-div.info a {
+div[class^="info"] p input {
+  width: 95%;
+  height: 28px;
+  line-height: 28px;
+}
+div[class^="info"] p span {
+  margin-top: 8px;
+  width: 16px;
+  height: 16px;
+  background: url("../img/del@2x.png") 0 0 no-repeat;
+  background-size: 16px 16px;
+}
+div[class^="info"] a {
   width: 100%;
   display: block;
 }
-div.info span {
+div[class^="info"] span {
   width: 70%;
   position: static;
   height: 35px;
@@ -316,18 +441,18 @@ div.info span {
   text-align: right;
   float: right;
 }
-div.info span input {
-  height: 40px;
+div[class^="info"] span input {
+  height: 35px;
   -web-kit-appearance: none;
   -moz-appearance: none;
   width: 80%;
   text-align: right;
   outline: 0;
 }
-div.info .fr {
+div[class^="info"] .fr {
   float: right;
 }
-div.info .bg1 {
+div[class^="info"] .bg1 {
   background: url("../img/more1.png") 0 0 no-repeat;
   background-size: 7px 13px;
   width: 7px;
@@ -335,7 +460,7 @@ div.info .bg1 {
   margin-top: 11px;
   margin-left: 3px;
 }
-div.info .bg2 {
+div[class^="info"] .bg2 {
   width: 7px;
   height: 13px;
   background: url("../img/more@2x.png") 0 0 no-repeat;
@@ -343,14 +468,38 @@ div.info .bg2 {
   margin-top: 11px;
   margin-left: 3px;
 }
-div.info .bla {
+div[class^="info"] .bla {
   font-size: 0.722rem;
-  color: #333;
+  color: #333 !important;
 }
-div.info .blan {
-  color: #333;
+div[class^="info"] .blan {
+  color: #333 !important;
 }
 .red {
-  color: red;
+  color: red !important;
 }
-(node:6016) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.
+/*普通剪发简介*/
+.tex {
+  width: 100%;
+  background-color: #fff;
+  text-align: left;
+  padding: 0 26px 26px 26px;
+}
+.tex p {
+  margin-right: 26px;
+  display: block;
+  text-align: right;
+}
+.addZ {
+  position: fixed;
+  height: 49px;
+  line-height: 49px;
+  bottom: 49px;
+  background-color: #fff;
+  width: 100%;
+  z-index: 1000;
+}
+.addZ a {
+  color: #c39528;
+}
+(node:17580) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.

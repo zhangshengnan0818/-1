@@ -1,0 +1,61 @@
+/*tab内容*/
+.tab-content .media {
+  padding-top: 10px;
+  margin-bottom: 6px;
+  background-color: #fff;
+}
+.tab-content .media-left {
+  padding-left: 18px;
+}
+.tab-content .media-left img {
+  width: 65px;
+  height: 65.5px;
+}
+.tab-content .media-left span.gl {
+  background-color: #eabd15;
+}
+.tab-content .media-left span {
+  width: 50px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 10px;
+  background: #c39528;
+  color: #fff;
+  margin: 20px 0 10px 0;
+  font-size: 0.6rem;
+}
+.tab-content .media-left span a {
+  width: 100%;
+  height: 100%;
+}
+.tab-content .media-body {
+  text-align: left;
+}
+.tab-content .media-body > p {
+  font-size: 0.777rem;
+}
+.tab-content .media-body > p span {
+  padding-right: 10px;
+  right: 0;
+  font-size: 0.611rem;
+}
+.tab-content .media-body > div p {
+  width: 100%;
+  font-size: 0.722rem;
+  margin-top: 19px;
+}
+.tab-content .media-body > div p b {
+  margin-right: 20px;
+}
+.tab-content .media-body > div p span {
+  width: 60px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 0.555rem;
+  right: 5%;
+  box-shadow: 0px 5px 10px rgba(88, 88, 88, 0.2);
+  border-radius: 9px;
+  border: 1px solid #eee;
+  text-align: center;
+}
+(node:19064) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.

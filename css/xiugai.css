@@ -61,4 +61,4 @@
   border: 1px solid #eee;
   padding: 0px;
 }
-(node:12320) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.
+(node:6672) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.

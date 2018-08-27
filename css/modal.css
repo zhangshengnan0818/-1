@@ -1,0 +1,55 @@
+.modal {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  outline: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.modalDialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+.modalContent {
+  position: relative;
+  width: 275px;
+  margin: 0 auto;
+  margin-top: 210px;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  -webkit-box-shadow: 0 10px 1px rgba(238, 238, 238, 0.25);
+  box-shadow: 0 10px 1px rgba(238, 238, 238, 0.25);
+  background-clip: padding-box;
+  outline: 0;
+}
+.modalHead,
+.modalFoot {
+  height: 40px;
+  line-height: 40px;
+}
+.modalBody {
+  height: 91px;
+  line-height: 91px;
+  border-top: 1px solid #f5f5f5;
+  border-bottom: 1px solid #f5f5f5;
+}
+.modalBody input {
+  height: 39px;
+  text-align: center;
+}
+.modalFoot a {
+  display: inline-block;
+  width: 110px;
+  text-align: center;
+}
+.modalFoot a:first-child {
+  border-right: 1px solid #f5f5f5;
+}
+(node:16728) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.
