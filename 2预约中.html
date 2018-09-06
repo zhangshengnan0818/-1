@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/yuyue.css">
+</head>
+<body>
+<div class="header">
+  <div class="container">
+    <div class="headTop">
+      <p>预约中
+        <span class="cl"></span>
+        <span class="sd"></span>
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<div class="main">
+  <div class="container">
+    <div class="tab-head row">
+      <div class="col-xs-6">
+        <li class="active">
+          <a href="#wait">待审核</a>
+        </li>
+      </div>
+      <div class="col-xs-6">
+        <li class="">
+          <a href="#appoint">已预约</a>
+        </li>
+      </div>
+    </div>
+    <div class="tab-content">
+      <div class="curren tabItem" id="wait">
+        <div class="user">
+          <div class="userTop">
+            <p>
+              <span></span>
+              林中月
+              <a href="#">修改<span></span></a>
+            </p>
+          </div>
+          <div class="userContent">
+            <p class="p1">美发师：<span>阿峰店长</span></p>
+            <p class="p2">服务：<span class="r0">未选择</span></p>
+
+            <p class="time">
+              <span></span>周二(7.16)16:00
+            </p>
+
+            <p class="tips">备注：剪发</p>
+          </div>
+          <div class="userFoot">
+            <p>
+              <span></span>
+              联系客户
+
+            </p>
+            <span class="accp">接受预约</span>
+          </div>
+        </div>
+      </div>
+      <div class="tabItem" id="appoint">
+        <div class="user">
+          <div class="userTop">
+            <p>
+              <span></span>
+              月林中
+              <a href="2_1修改.html">修改<span></span></a>
+            </p>
+          </div>
+          <div class="userContent">
+            <p class="p1">美发师：<span>阿峰店长</span></p>
+            <p class="p2">服务：<span class="r0">未选择</span></p>
+
+            <p class="time">
+              <span></span>周二(7.16)16:00
+            </p>
+
+            <p class="tips">备注：剪发</p>
+          </div>
+          <div class="userFoot">
+            <p>
+              <span></span>
+              联系客户
+
+            </p>
+            <a href="#"><span class="accp">接受预约</span></a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-4">
+        <div class="footItem">
+          <a href="1首页.html">
+            <img src="img/index.png" alt=""/>
+
+            <p>首页</p>
+          </a>
+
+        </div>
+
+      </div>
+      <div class="col-xs-4">
+        <div class="footItem active">
+          <a href="2预约中.html">
+            <img src="img/ing1.png" alt=""/>
+            <p>预约中</p>
+          </a>
+
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="footItem">
+          <a href="3店铺.html">
+            <img src="img/shop.png" alt=""/>
+            <p>店铺</p>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<!--<script src="js/bootstrap.js"></script>-->
+<!--内容切换-->
+<script src="js/dianpu.js"></script>
+<!--footer切换-->
+<script>
+  $('.footer').on('click', '.footItem', function () {
+    if (!$(this).hasClass("active")) {
+      var url = $(this).children('p').html();
+//      var str=`${url}.html`;
+//      console.log(str);
+      window.location.href = `${url}.html`;
+//      获取目标元素图片src
+      var picSrc = $(this).children('img').attr('src');
+      picSrc = picSrc.split(".")[0] + "1." + picSrc.split(".")[1];
+      $(this).children('img').attr('src', picSrc);
+//      添加目标元素CSS
+      $(this).addClass('active');
+//      找到要替换元素src
+      var pic2 = $(this).parent().siblings().children('.active');
+//      console.dir(pic2);
+//      移除CSS
+      pic2.removeClass('active');
+//      重置路径
+      var picSrc2 = pic2.children('img').attr('src');
+//      console.log(picSrc2);
+      var str = picSrc2.split(".")[0];
+      picSrc2 = str.substring(0., str.length - 1) + "." + picSrc2.split(".")[1];
+      pic2.children('img').attr('src', picSrc2);
+    } else {
+      return;
+    }
+  })
+</script>
+<!--<script>-->
+<!--(function () {-->
+<!--var s = document.createElement("script");-->
+<!--s.onload = function () {-->
+<!--bootlint.showLintReportForCurrentDocument([]);-->
+<!--};-->
+<!--s.src = "js/bootlint.js";//路径-->
+<!--document.body.appendChild(s)-->
+<!--})();-->
+<!--</script>-->
+</body>
+</html>

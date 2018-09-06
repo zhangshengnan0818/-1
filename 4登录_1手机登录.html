@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/hdsc.css">
+</head>
+<body>
+<div class="header">
+  <div class="container">
+    <div class="headTop">
+      <p>登录
+        <span class="cl"></span>
+        <span class="sd"></span>
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<div class="main">
+  <div class="container">
+    <div class="tab-head">
+      <ul>
+        <li class="active d3">
+          <a href="#pLogin">手机登录</a>
+        </li>
+        <li class="d3">
+          <a href="#chief">总监</a>
+        </li>
+        <li class="d3">
+          <a href="#staff">未命名</a>
+        </li>
+      </ul>
+    </div>
+    <div class="content4_3">
+      <div class="info head">
+        身份验证
+      </div>
+      <div class="info5">
+        <p>
+          <span class="sj"></span> 手机
+        </p>
+
+        <p>
+          +86 <i></i>
+          <input type="text" id="mphone" placeholder="13600001234"/>
+        </p>
+      </div>
+      <div class="info5">
+        <p>
+          <span class="yz"></span> 验证码
+        </p>
+
+        <p>
+          <input type="text" placeholder="请输入验证码"/>
+          <button class="fr" id="send" onclick="sendMessage()">发送验证码</button>
+        </p>
+      </div>
+
+      <div class="info6">
+        <input type="button" value="下一步，设置新密码" onclick=window.location.href="3_4设置_1.1新密码.html" disabled/>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="footer">
+  <div class="container">
+    <a href="#"><img src="img/返回@2x.png" alt=""/></a>
+    <a href="#"><img src="img/前进@2x.png" alt=""/></a>
+  </div>
+
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/touch.js"></script>
+<script src="js/REyzm.js"></script>
+</body>
+</html>

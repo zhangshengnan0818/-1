@@ -4,10 +4,9 @@
 /*预约时间*/
 .yysj {
   background-color: #fff;
-  overflow: auto;
+  overflow-x: scroll;
 }
 .yysj .yysjtop {
-  top: 0;
   width: 735px;
   font-size: 0.7rem;
   border-top: 1px solid #eee;
@@ -22,6 +21,7 @@
   clear: both;
 }
 .yysj .yysjtop li {
+  width: 105px;
   float: left;
   height: 35px;
   line-height: 35px;
@@ -44,7 +44,7 @@
 }
 .yysjbody ul li {
   float: left;
-  width: 33.333%;
+  width: 30%;
   height: 37px;
   line-height: 37px;
 }
@@ -61,4 +61,4 @@
   border: 1px solid #eee;
   padding: 0px;
 }
-(node:20440) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.
+(node:9880) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.

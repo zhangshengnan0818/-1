@@ -5,6 +5,8 @@ $('.tab-head').on('click', 'li', function (e) {
   if (!$this.hasClass('active')) {
     $this.addClass('active');
     $this.parent().siblings().children().removeClass('active');
+    $this.siblings().removeClass('active');
+
     var m=$this.children('a').attr('href');
     $(m).addClass('curren');
     $(m).siblings().removeClass('curren');
@@ -20,7 +22,7 @@ $('.footer').on('click', '.footItem', function () {
     var url = $(this).children('p').html();
 //      var str=`${url}.html`;
 //      console.log(str);
-    window.location.href = `${url}.html`;
+//    window.location.href = `${url}.html`;
 //      获取目标元素图片src
     var picSrc = $(this).children('img').attr('src');
     picSrc = picSrc.split(".")[0] + "1." + picSrc.split(".")[1];

@@ -1,18 +1,5 @@
-/*导航*/
-.main li {
-  height: 40px;
-  line-height: 40px;
-  width: 120px;
-  margin: 0 auto;
-}
-.main li.active {
-  border-bottom: 1px solid #c39528;
-}
-.tab-head {
-  margin: 4px 0 6px 0;
-}
-.tabItem {
-  opacity: 0;
+.user {
+  margin-top: 9px;
 }
 .user .userTop p,
 .user .userFoot p {
@@ -115,4 +102,4 @@
   box-shadow: 0 4px 6px #e6e6e6;
   width: 140px;
 }
-(node:23628) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.
+(node:12312) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.

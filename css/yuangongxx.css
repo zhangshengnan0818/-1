@@ -60,4 +60,4 @@
 .show {
   display: block;
 }
-(node:19480) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.
+(node:3164) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.

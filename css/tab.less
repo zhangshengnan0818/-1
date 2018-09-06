@@ -1,0 +1,27 @@
+.tab-head{
+  width: 100%;
+  overflow-x: auto;
+  ul{
+    width: 130*3px;
+    li{
+      float: left;
+      display: inline-block;
+      &.d3{
+        width: 130px;
+      }
+      a{
+        display: inline-block;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+      }
+    }
+    &:after{
+        content:"";
+        height:0;
+        visibility:hidden;
+        display:block;
+        clear:both;
+      }
+  }
+}

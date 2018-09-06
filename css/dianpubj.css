@@ -24,9 +24,9 @@
 }
 .bannerP .bannerB li .pic img {
   width: 100%;
-  height: auto;
+  max-height: 75px;
 }
 .bannerP .bannerB li a {
   font-size: 0.666rem;
 }
-(node:12828) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.
+(node:12500) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.

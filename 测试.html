@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/dianpubj.css">
+  <link rel="stylesheet" href="css/modal.css"/>
+  <link rel="stylesheet" href="css/timeModal.css"/>
+</head>
+<body>
+<!--时间 star-->
+<div class="modal" id="yydM"><!--全屏-->
+  <div class="modalDialog"><!--相对定位-->
+    <div class="modalContent">
+      <div class="modalHead">
+        <!--<span class="back"><a href="#" class=" dis">返回</a></span>-->
+        <span class="name">营业时间</span>
+        <!--<span class="cancel"><a href="javascript:;">取消</a></span>-->
+
+      </div>
+      <div class="modalBody">
+        <div class='checkbox'>
+          <input type='checkbox' id='1' name='checkboox[]' checked>
+          <label for='1'>星期一</label>
+        </div>
+        <div class='checkbox'>
+          <input type='checkbox' id='2' name='checkboox[]' checked>
+          <label for='2'>星期二</label>
+        </div>
+        <div class='checkbox'>
+          <input type='checkbox' id='3' name='checkboox[]' checked>
+          <label for='3'>星期三</label>
+        </div><div class='checkbox'>
+        <input type='checkbox' id='4' name='checkboox[]' checked>
+        <label for='4'>星期四</label>
+      </div>
+        <div class='checkbox'>
+          <input type='checkbox' id='5' name='checkboox[]' checked>
+          <label for='5'>星期五</label>
+        </div>
+        <div class='checkbox'>
+          <input type='checkbox' id='6' name='checkboox[]' checked>
+          <label for='6'>星期六</label>
+        </div>
+        <div class='checkbox'>
+          <input type='checkbox' id='7' name='checkboox[]' checked>
+          <label for='7'>星期日</label>
+        </div>
+
+      </div>
+      <div class="modalFoot">
+        <a href="#" class="cancel">取消</a>
+        <a href="#">保存</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!--时间段 star-->
+<div class="modal" id="yytM"><!--全屏-->
+  <div class="modalDialog"><!--相对定位-->
+    <div class="modalContent">
+      <div class="modalHead">
+        <!--<span class="back"><a href="#" class=" dis">返回</a></span>-->
+        <span class="name">营业时段</span>
+        <!--<span class="cancel"><a href="javascript:;">取消</a></span>-->
+
+      </div>
+      <div class="modalBody">
+        <div id="starT">
+          <div>
+            <ul class="hL">
+            </ul>
+          </div>
+          <div class="dian">:</div>
+          <div>
+            <ul class="sL">
+            </ul>
+          </div>
+        </div>
+        <div class="dian">-</div>
+        <div id="endT">
+          <div class="dian">:</div>
+          <div>
+            <ul class="hL">
+            </ul>
+          </div>
+          <div>
+            <ul class="sL">
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="modalFoot">
+        <a href="#" class="cancel">取消</a>
+        <a href="#">保存</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="header">
+  <div class="container">
+    <div class="headTop">
+      <p>店铺管理
+        <span class="cl"></span>
+        <span class="sd"></span>
+      </p>
+    </div>
+  </div>
+
+</div>
+<p class="nav2">
+  <span></span>
+  <a href="3店铺.html">店铺管理</a>
+  <b><a href="#" class="active">保存</a></b>
+</p>
+
+<div class="main">
+  <div class="container">
+
+    <!--店铺名称-->
+    <div class="content4_2">
+      <div class="info head">
+        店铺名称
+        <span class="active fr"><a href="#">SKYBY & SALON(正大新区南门店)</a></span>
+      </div>
+      <div class="info">
+        地址
+        <span class="fr bg2"></span>
+        <span class="bla fr">科学大道与长椿路交叉口郑州大学南门</span>
+      </div>
+      <div class="info">
+        电话
+        <span class="fr bg2"></span>
+        <span class="bla">135 0000 0001</span>
+      </div>
+      <div class="info">
+        行业
+        <span class="fr bg2"></span>
+        <span class="bla">美发</span>
+      </div>
+      <div class="info">
+        营业时间
+        <span class="fr bg2"></span>
+        <span class="bla" id="yyd">每天</span>
+      </div>
+      <div class="info">
+        营业时段
+        <span class="bg2"></span>
+        <span class="bla" id="yyt">8：30-23：30</span>
+      </div>
+    </div>
+    <!--服务-->
+    <div class="content4_1">
+      <div class="info head">
+        <a href="3_1服务_0.html">
+          服务
+          <span>编辑</span>
+        </a>
+
+      </div>
+      <div class="d3">
+        <p>剪发</p>
+
+        <div>
+          <span class="fl">普通剪发</span>
+          <span class="fm">含洗、剪、吹各一次包</span>
+          <span class="fr">&yen;30/次</span>
+        </div>
+      </div>
+      <div class="d3">
+        <p>剪发</p>
+
+        <div>
+          <span class="fl">普通剪发</span>
+          <span class="fm">含洗、剪、吹各一次包</span>
+          <span class="fr">&yen;30/次</span>
+        </div>
+      </div>
+    </div>
+    <!--轮播图-->
+    <div class="content4_1">
+      <div class="info head">
+        轮播图
+        <span>添加</span>
+      </div>
+    </div>
+    <div class="bannerP">
+      <div class="bannerB">
+        <ul>
+          <li>
+            <div class="pic">
+              <img src="img/pic@2x.png" alt=""/>
+            </div>
+            <a href="#" class="active">替换</a>|
+            <a href="#" class="red">删除</a>
+          </li>
+          <li>
+            <div class="pic">
+              <img src="img/pic@2x.png" alt=""/>
+            </div>
+            <a href="#" class="active">替换</a>|
+            <a href="#" class="red">删除</a>
+          </li>
+          <li>
+            <div class="pic">
+              <img src="img/pic@2x.png" alt=""/>
+            </div>
+            <a href="#" class="active">替换</a>|
+            <a href="#" class="red">删除</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<!--<script src="js/touch.js"></script>-->
+<script>
+  /*for(var i=0;i<24;i++){
+    if(i<10){
+      hHtml+=`
+       <li><a href="javascript:;">0${i}</a></li>
+    `
+    }else{
+      hHtml+=`
+       <li><a href="javascript:;">${i}</a></li>
+    `
+    }
+
+  }*/
+
+
+
+  var sHtml='';
+  for(var j=0;j<60;j++){
+    if(j<10){
+      sHtml+=`
+       <li><a href="javascript:;">0${j}</a></li>
+    `;
+    }else{
+      sHtml+=`
+       <li><a href="javascript:;">${j}</a></li>
+    `;
+    }
+  }
+  $(".sL").append(sHtml);
+ /* $("#yytM ul").on('click','a',function(){
+    $li=$(this).parent();
+    if(!$li.hasClass('active')){
+      $li.addClass('active');
+      $li.siblings().removeClass('active');
+    }else{
+      return;
+    }
+
+  })*/
+</script>
+<script>
+  /*时间选择*/
+  var star_y;
+  var end_y;
+  var touchmove = false;
+  var max=23;
+  $(document).on("touchstart", '#yytM .hL', function (e) { // 触摸开始时
+//    console.log('11');
+    if (e.originalEvent.targetTouches) {
+      star_y = e.originalEvent.targetTouches[0].pageY;
+    } else {
+      star_y = e.pageY;
+    }
+//    console.log("star:"+star_y);
+  });
+
+  $(document).on("touchmove", '#yytM .hL', function (e) { // 触摸过程中...
+    if (star_y - end_y>= 10) {
+      touchmove = true;
+    }
+    if (e.originalEvent.targetTouches) {
+      end_y = e.originalEvent.targetTouches[0].pageY;
+    } else {
+      end_y = e.pageY;
+    }
+//    console.log("end:"+end_y);
+    var n=0;
+    function move(star_y,end_y){
+      if (star_y - end_y>= 0) {  // touchmove 向上移动
+        n++;
+//      return n;
+      } else {  // 向下移动
+        n--;
+//      return n;
+      }
+      console.log(n);
+
+    }
+
+  });
+
+  $(document).on("touchend", '#yytM .hL', function (e) {  // 触摸抬起时
+//    console.log('33');
+
+  });
+var n;
+  var hHtml='';
+  if(n-1<0){
+    hHtml += `<li><a href="#"></a></li> `;
+    hHtml += `<li class="active"><a href="#">${n}</a></li> `;
+    hHtml += `<li><a href="#">${n+1}</a></li> `;
+  } else if(n+1>max){
+    hHtml += `<li><a href="#">${n-1}</a></li> `;
+    hHtml += `<li class="active"><a href="#">${n}</a></li> `;
+    hHtml += `<li><a href="#"></a></li> `;
+  }else{
+    hHtml += `<li><a href="#">${n-1}</a></li> `;
+    hHtml += `<li class="active"><a href="#">${n}</a></li> `;
+    hHtml += `<li><a href="#">${n+1}</a></li> `;
+  }
+  $(".hL").append(hHtml);
+
+</script>
+<script src="js/modal.js"></script>
+</body>
+</html>

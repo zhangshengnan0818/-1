@@ -1,504 +1,702 @@
 @charset "utf-8";
 /*通用*/
-ul,li,p,h1,h2,h3,h4,h5,h6,dl,dt,dd {
-  margin:0;
-  padding:0;
-  border:none;
-  list-style:none;
+ul, li, p, h1, h2, h3, h4, h5, h6, dl, dt, dd {
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
   font-weight: 400;
 }
-input,button,textarea {border:none;outline: none;}
-html{
+
+input, button, textarea {
+  border: none;
+  outline: none;
+}
+
+html {
   font-size: 18px !important;
 }
+
 /*@font-face {
   font-family: PingFang-SC-Regular;
   src: url('../fonts/PingFang%20Regular.ttf');
 }*/
 body {
-  font-family: PingFang Regular,Roboto-Regular,"微软雅黑";
-  color:#333;
-  margin:0 auto;
-  padding:0;
+  font-family: PingFang Regular, Roboto-Regular, "微软雅黑";
+  color: #333;
+  margin: 0 auto;
+  padding: 0;
   width: 100%;
 }
-::-webkit-input-placeholder{
+
+#mphone::-webkit-input-placeholder {
+  color: #000;
+}
+
+#mphone::-moz-placeholder {
+  color: #000;
+}
+
+#mphone:-ms-input-placeholder {
+  color: #000;
+}
+
+::-webkit-input-placeholder {
   color: #d7d6d6;
 }
+
 ::-moz-placeholder {
   color: #d7d6d6;
 }
+
 :-ms-input-placeholder {
-    color: #d7d6d6;
+  color: #d7d6d6;
 }
- .row {
-    margin: 0;
+
+.row {
+  margin: 0;
+}
+
+/*页面尺寸*/
+body {
+  background-color: #f5f5f5;
+}
+
+.container {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+span {
+  display: inline-block;
+}
+
+a, a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+b, i {
+  display: inline-block;
+}
+
+b {
+  font-weight: normal;
+}
+
+i {
+  font-style: normal;
+}
+
+@head: 88/2px;
+@foot: 98/2px;
+@nav2: 80/2px;
+@yellow: #c39528;
+.header, .footer, .main {
+  width: 100%;
+}
+
+.header, .footer {
+  position: fixed;
+  text-align: center;
+  z-index: 999;
+  background-color: #fff;
+}
+
+p {
+  position: relative;
+  span {
+    position: absolute;
   }
-  /*页面尺寸*/
-  body {
-    background-color: #f5f5f5;
+}
+
+/*头部*/
+.header {
+  height: @head;
+  top: 0;
+}
+
+.headTop {
+  p {
+    font-size: 0.888rem;
+    line-height: @head;
   }
-  .container {
-    text-align: center;
-    margin: 0 auto;
-    padding: 0;
+}
+
+.cl {
+  top: (88/2-14)/2px;
+  left: 10px;
+  width: 28/2px;
+  height: 28/2px;
+  background: url("../img/关闭@2x.png") 0 0 no-repeat;
+  background-size: 14px 14px;
+}
+
+.sd {
+  top: (88/2-4)/2px;
+  right: 20px;
+  width: 40/2px;
+  height: 8/2px;
+  background: url("../img/更多@2x.png") 0 0 no-repeat;
+  background-size: 20px 4px;
+}
+
+/*二级头部固定*/
+p.nav2 {
+  position: fixed;
+  top: @head;
+  width: 100%;
+  height: @nav2;
+  line-height: @nav2;
+  margin-bottom: @nav2;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  font-size: 0.833rem;
+  text-align: center;
+  z-index: 999;
+
+  a {
+    width: 100%;
+    display: block;
   }
   span {
-    display: inline-block;
-  }
-  a, a:hover {
-    color: #000;
-    text-decoration: none;
-  }
-  b, i {
-    display: inline-block;
+    width: 16/2px;
+    height: 32/2px;
+    background: url("../img/返回@2x.png") 0 0 no-repeat;
+    background-size: 16/2px 32/2px;
+    top: 12px;
+    left: 12px;
   }
   b {
-    font-weight: normal;
-  }
-  i {
-    font-style: normal;
-  }
-  @head: 88/2px;
-  @foot: 98/2px;
-  @nav2: 80/2px;
-  @yellow: #c39528;
-  .header, .footer, .main {
-    width: 100%;
-  }
-  .header, .footer {
-    position: fixed;
-    text-align: center;
-    z-index: 999;
-    background-color: #fff;
-  }
-  p {
-    position: relative;
-    span {
-      position: absolute;
-    }
-  }
-  /*头部*/
-  .header {
-    height: @head;
+    position: absolute;
     top: 0;
+    right: 15px;
+    display: inline-block;
   }
-  .headTop {
-    p {
-      font-size: 0.888rem;
-      line-height: @head;
-    }
-  }
-  .cl {
-    top: (88/2-14)/2px;
-    left: 10px;
-    width: 28/2px;
-    height: 28/2px;
-    background: url("../img/关闭@2x.png") 0 0 no-repeat;
-    background-size: 14px 14px;
-  }
-  .sd {
-    top: (88/2-4)/2px;
-    right: 20px;
-    width: 40/2px;
-    height: 8/2px;
-    background: url("../img/更多@2x.png") 0 0 no-repeat;
-    background-size: 20px 4px;
-  }
-  /*二级头部固定*/
-  p.nav2 {
-    position: fixed;
-    top: @head;
-    width: 100%;
-    height: @nav2;
-    line-height: @nav2;
-    margin-bottom: @nav2;
-    background-color: #fff;
-    border-top: 1px solid #eee;
-    font-size: 0.833rem;
+
+}
+
+p.nav2 + .main {
+  margin-top: @head+@nav2;
+  margin-bottom: @foot*2+10;
+}
+
+/*main*/
+.main {
+  margin-top: @head;
+  margin-bottom: @foot;
+}
+
+/* 底部导航*/
+.footer {
+  height: @foot;
+  bottom: 0;
+  font-size: 0.722px;
+  box-shadow: 0 -1px 10px #CCC;
+  color: #333;
+  input{
+    display: inline-block;
+    color: @yellow;
+    height: 49px;
+    line-height: 49px;
+    font-size: 0.944rem;
+    background-color: transparent;
     text-align: center;
-    z-index: 999;
-    a {
-      width: 100%;
-      display: block;
-    }
-    span {
-      width: 16/2px;
-      height: 32/2px;
-      background: url("../img/返回@2x.png") 0 0 no-repeat;
-      background-size: 16/2px 32/2px;
-      top: 12px;
-      left: 12px;
-    }
-    b {
-      position: absolute;
-      top: 0;
-      right: 15px;
-
-    }
-
+    width: 100%;
   }
-
-  p.nav2 + .main {
-    margin-top: @head+@nav2;
-  }
-  /*main*/
-  .main {
-    margin-top: @head;
-    margin-bottom: @foot;
-  }
-  /* 底部导航*/
-  .footer {
+  a {
+    //前进后退按钮
+    width: 100px;
+    display: inline-block;
     height: @foot;
-    bottom: 0;
-    font-size: 0.722px;
-    box-shadow: 0 -1px 10px #CCC;
-    color: #333;
-    .footItem {
-      padding: 8px 0 10px 0;
+    &.btn{
+      line-height: @foot;
     }
     img {
-      width: 20px;
-      height: 22px;
+      width: 16/2px;
+      height: 32/2px;
     }
+  }
+  .footItem {
+    padding: 8px 0 10px 0;
     a {
-      width: 100px;
-      display: inline-block;
+      display: block;
+      width: 100%;
+      img {
+        width: 20px;
+        height: 22px;
+      }
+
+    }
+  }
+}
+
+.active a, .active, .active a:hover, .active a:visited {
+  color: @yellow !important;
+}
+
+/*tab内容*/
+.tab-head {
+  background-color: #fff;
+  margin-top: 2px;
+  li {
+    height: 80/2px;
+    line-height: 80/2px;
+    font-size: 0.833rem;
+  }
+}
+
+.tab-content {
+  position: relative;
+  margin-top: 6px;
+}
+
+.tabItem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  transition: opacity 1s linear;
+  > div {
+    background-color: #fff;
+  }
+  &.week {
+    opacity: 1;
+    margin-top: 9px;
+    position: static;
+  }
+}
+
+.curren {
+  opacity: 1 !important;
+  //width: 100% !important;
+}
+
+/*media*/
+
+/*二级底部*/
+.footer {
+  .foot2 {
+    padding: 0;
+    font-weight: normal;
+    font-size: 0.944rem;
+    a {
+      color: @yellow;
+    }
+    p {
       height: @foot;
       line-height: @foot;
-      img {
-        width: 16/2px;
-        height: 32/2px;
-      }
-    }
-  }
-  .active a, .active {
-    color: @yellow;
-  }
-  /*tab内容*/
-  .tab-head {
-    background-color: #fff;
-    li {
-      height: 80/2px;
-      line-height: 80/2px;
-      font-size: 0.833rem;
-    }
-  }
-  .tab-content {
-    position: relative;
-  }
-  .tabItem {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    width: 100%;
-    transition: opacity 1s linear;
-    > div {
-      background-color: #fff;
-    }
-  }
-  .curren {
-    opacity: 1 !important;
-    //width: 100% !important;
-  }
-  /*media*/
-
-  /*二级底部*/
-  .footer {
-    .foot2 {
-      padding: 0;
-      font-weight: normal;
-      font-size: 0.944rem;
-      a {
-        color: @yellow;
-      }
-      p {
-        height: @foot;
-        line-height: @foot;
-        text-align: left;
-        margin-left: 20px;
-        span {
-          box-shadow: none;
-          margin: 0;
-        }
-      }
+      text-align: left;
+      margin-left: 20px;
       span {
-        float: right;
-        margin: -@foot 0;
-        height: @foot;
-        line-height: @foot;
-        font-size: 0.944rem;
-        color: @yellow;
-        box-shadow: 0 4px 6px #e6e6e6;
-        width: 10rem;
+        box-shadow: none;
+        margin: 0;
       }
     }
-
-  }
-  /*div-info*/
-  div[class^=content] {
-    background-color: #fff;
-  }
-  /*9/2*/
-  div.content {
-    margin-top: 9/2px;
-  }
-  /*5/2*/
-  div[class^=content1] {
-    margin-top: 5/2px;
-  }
-  /*32/2*/
-  div[class^=content2] {
-    margin-top: 23/2px;
-  }
-  /*14/2*/
-  div[class^=content3] {
-    margin-top: 7px;
-  }
-  /*12/2*/
-  div[class^=content4] {
-    margin-top: 12/2px;
-  }
-  /*最后一个info 无边*/
-  //div[class^="content"][class$="_2"]{
-  div[class^="content"][class$="_2"] {
-    .info, .info2 {
-      &:last-child {
-        border: none;
-      }
-    }
-  }
-  /*第一个info 有边*/
-  div[class^="content"][class$="_1"] {
-    .info {
-      &:not(:first-child) {
-        border: none;
-      }
-    }
-  }
-  div.checkbox, .radio {
-    border-bottom: 1px solid #f5f5f5;
     span {
-      height: 40px;
-      line-height: 40px;
-      font-size: 0.833rem;
+      float: right;
+      margin: -@foot 0;
+      height: @foot;
+      line-height: @foot;
+      font-size: 0.944rem;
+      color: @yellow;
+      box-shadow: 0 4px 6px #e6e6e6;
+      width: 10rem;
     }
   }
-  .checkbox, .radio {
-    position: relative;
-    height: 79/2px;
-    background-color: #fff;
-    margin: 0;
+
+}
+
+/*div-info*/
+div[class^=content] {
+  background-color: #fff;
+}
+
+/*9/2*/
+div.content {
+  margin-top: 9/2px;
+}
+
+/*5/2*/
+div[class^=content1] {
+  margin-top: 5/2px;
+}
+
+/*32/2*/
+div[class^=content2] {
+  margin-top: 23/2px;
+}
+
+/*14/2*/
+div[class^=content3] {
+  margin-top: 7px;
+}
+
+/*12/2*/
+div[class^=content4] {
+  margin-top: 12/2px;
+}
+
+/*最后一个info 无边*/
+//div[class^="content"][class$="_2"]{
+div[class^="content"][class$="_2"] {
+  .info, .info2 {
+    &:last-child {
+      border: none;
+    }
   }
-  .checkbox input[type='checkbox'], .radio input[type='radio'] {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 20px;
-    height: 20px;
-    opacity: 0;
-    margin: 0;
+}
+
+/*第一个info 有边*/
+div[class^="content"][class$="_1"] {
+  .info {
+    &:not(:first-child) {
+      border: none;
+    }
   }
-  .checkbox label, .radio label {
-    position: absolute;
-    left: 0;
-    top: 0;
+}
+
+/*第一个info 无边*/
+div[class^="content"][class$="_3"] {
+  .info {
+    &:first-child {
+      border: none;
+    }
+  }
+}
+
+div.checkbox, .radio {
+  border-bottom: 1px solid #f5f5f5;
+  span {
     height: 40px;
     line-height: 40px;
     font-size: 0.833rem;
-    padding-left: 20px;
-    font-weight: normal;
-    cursor: pointer;
-    width: 100%;
-    text-align: left;
   }
-  /*点击前圆的样式*/
-  .checkbox label:before, .radio label:before {
-    content: '';
-    position: absolute;
-    right: 20px;
-    top: 10px;
-    width: 20px;
-    height: 20px;
-    border: 1px solid @yellow;
-    border-radius: 50%;
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-  }
-  /*点击后对勾的效果*/
-  .checkbox label:after, .radio label:after {
-    content: '';
-    position: absolute;
-    right: 26px;
-    top: 12px;
-    width: 6px;
-    height: 12px;
-    border: 0;
-    border-right: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    background: #fff;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-  }
-  .checkbox input[type='checkbox']:checked + label:before, .radio input[type='radio']:checked + label:before {
-    background: @yellow;
-    border-color: @yellow;
-  }
-  .checkbox input[type='checkbox']:checked + label:after, .radio input[type='radio']:checked + label:after {
-    background: @yellow;
-  }
-  div[class^="info"] {
-    position: relative;
-    text-align: left;
-    height: 80/2px;
-    line-height: 80/2px;
-    &.info2 {
-      height: 70px;
-      line-height: 70px;
-      span.bg2 {
-        margin-top: 63/2px;
-      }
-      span.img {
-        border-radius: 50%;
-        width: 55px;
-        height: 55px;
-        line-height: 55px;
-        background-color: #f5f5f5;
-        margin: 15/2px;
-      }
-    }
-    /*2行*/
-    &.l2 {
-      height: 80px;
-      p {
-        color: @yellow;
-        font-size: 0.722rem;
-        height: 30px;
-        line-height: 30px;
-      }
-      font-size: 0.666rem;
-    }
-    /*30px 头*/
-    &.head {
-      font-size: 0.833rem;
-    }
-    b {
-      position: absolute;
+}
+
+.checkbox, .radio {
+  position: relative;
+  height: 79/2px;
+  background-color: #fff;
+  margin: 0;
+}
+
+.checkbox input[type='checkbox'], .radio input[type='radio'] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  margin: 0;
+}
+
+.checkbox label, .radio label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 40px;
+  line-height: 40px;
+  font-size: 0.833rem;
+  padding-left: 20px;
+  font-weight: normal;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+/*点击前圆的样式*/
+.checkbox label:before, .radio label:before {
+  content: '';
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid @yellow;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+}
+
+/*点击后对勾的效果*/
+.checkbox label:after, .radio label:after {
+  content: '';
+  position: absolute;
+  right: 26px;
+  top: 12px;
+  width: 6px;
+  height: 12px;
+  border: 0;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  background: #fff;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+}
+
+.checkbox input[type='checkbox']:checked + label:before, .radio input[type='radio']:checked + label:before {
+  background: @yellow;
+  border-color: @yellow;
+}
+
+.checkbox input[type='checkbox']:checked + label:after, .radio input[type='radio']:checked + label:after {
+  background: @yellow;
+}
+
+div[class^="info"] {
+  position: relative;
+  text-align: left;
+  height: 80/2px;
+  line-height: 80/2px;
+  font-size: 0.722rem;
+  border-bottom: 1px solid #f5f5f5;
+  background-color: #fff;
+  margin-left: 43/2px;
+  margin-right: 31/2px;
+  &.info5 {
+    height: 80px;
+    line-height: 80px;
+    p {
       height: 40px;
       line-height: 40px;
-      margin-left: 20%;
-    }
-    /*p input*/
-    p {
-      input {
-        width: 95%;
-        height: 28px;
-        line-height: 28px;
+      padding-left: 24px;
+      &:first-child {
+        color: @yellow;
+        span {
+          width: 15px;
+          height: 15px;
+          left: 0;
+          position: absolute;
+          top: 25/2px;
+          margin: 0;
+          &.sj {
+            background: url(../img/手机.png) 0 0 no-repeat;
+            background-size: 15px 15px;
+          }
+          &.yz {
+            background: url(../img/验证码.png) 0 0 no-repeat;
+            background-size: 15px 15px;
+          }
+        }
       }
-      span {
-        margin-top: 8px;
-        width: 16px;
-        height: 16px;
-        background: url("../img/del@2x.png") 0 0 no-repeat;
-        background-size: 16px 16px;
+      &:last-child {
+        color: #000;
+        i {
+          width: 8px;
+          height: 5px;
+          background: url(../img/箭头@2x.png) 0 0 no-repeat;
+          background-size: 8px 5px;
+          margin: 0 55px 3px 10px;
+        }
+        input {
+          width: 50%;
+        }
+        button {
+          position: static;
+          background-color: @yellow;
+          padding: 10px 0;
+          text-align: center;
+          width: 87px;
+          border-radius: 15px;
+          height: 30px;
+          line-height: 13px;
+          font-size: 0.555rem;
+          color: #fff;
+          margin: 0;
+        }
       }
     }
-    font-size: 0.722rem;
-    text-align: left;
-    height: 70/2px;
-    line-height: 70/2px;
-    border-bottom: 1px solid #f5f5f5;
-    background-color: #fff;
-    margin-left: 43/2px;
-    margin-right: 31/2px;
-    a {
-      width: 100%;
-      display: block;
+
+  }
+  &.info6 {
+    padding: 34px 0;
+    height: 106px;
+    text-align: center;
+    input {
+      color: #fff;
+      background-color: @yellow;
+      width: 170px;
+      height: 40px;
+      border-radius: 20px;
+      text-align: center;
+      opacity: .5;
+    }
+  }
+  &.info7 {
+    margin-top: 10px;
+    input {
+      height: 30px;
     }
     span {
-      width: 70%;
-      position: static;
-      height: 70/2px;
-      color: @yellow;
+      width: 30%;
+    }
+  }
+  &.info2 {
+    height: 70px;
+    line-height: 70px;
+    span.bg2 {
+      margin-top: 63/2px;
+    }
+    span.img {
+      border-radius: 50%;
+      width: 55px;
+      height: 55px;
+      line-height: 55px;
+      background-color: #f5f5f5;
+      margin: 15/2px;
+    }
+  }
+  /*2行*/
+  /*30px 头*/
+  &.head {
+    font-size: 0.833rem;
+  }
+  b {
+    position: absolute;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 20%;
+  }
+  /*p input*/
+  p {
+    input {
+      width: 95%;
+      height: 28px;
+      line-height: 28px;
+    }
+    span {
+      margin-top: 8px;
+      width: 16px;
+      height: 16px;
+      background: url("../img/del@2x.png") 0 0 no-repeat;
+      background-size: 16px 16px;
+    }
+  }
+  a {
+    width: 100%;
+    display: block;
+  }
+  span {
+    width: 70%;
+    position: static;
+    height: 70/2px;
+    color: @yellow;
+    text-align: right;
+    float: right;
+    //font-size:0.833rem;
+    input {
+      height: 35px;
+      -web-kit-appearance: none;
+      -moz-appearance: none;
+      width: 80%;
       text-align: right;
-      float: right;
-      //font-size:0.833rem;
-      input {
-        height: 35px;
-        -web-kit-appearance: none;
-        -moz-appearance: none;
-        width: 80%;
-        text-align: right;
-        outline: 0;
+      outline: 0;
+    }
+  }
+  .fr {
+    float: right;
+  }
+  /*yellow >*/
+  .bg1 {
+    background: url("../img/more1.png") 0 0 no-repeat;
+    background-size: 14/2px 26/2px;
+    width: 7px;
+    height: 13px;
+    margin-top: 13px;
+    margin-left: 3px;
+  }
+  /*black >*/
+  .bg2 {
+    width: 7px;
+    height: 13px;
+    background: url("../img/more@2x.png") 0 0 no-repeat;
+    background-size: 14/2px 26/2px;
+    margin-top: 13px;
+    margin-left: 3px;
+  }
+  /*span 26 black*/
+  .bla {
+    font-size: 0.722rem;
+    color: #333 !important;
+  }
+  /*span 30 black*/
+  .blan {
+    color: #333 !important;
+  }
+}
+.d3 {
+  font-size: 0.666rem;
+  padding: 0 15.5px 0 21.5px;
+  p {
+    color: @yellow;
+    font-size: 0.722rem;
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+  }
+  div{
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    span{
+      display: inline-block;
+      width: auto;
+      &.fl{
+        float: left;
+      }
+      &.fm{
+        margin: 0 auto;
+      }
+      &.fr{
+        float: right;
       }
     }
-    .fr {
-      float: right;
-    }
-    /*yellow >*/
-    .bg1 {
-      background: url("../img/more1.png") 0 0 no-repeat;
-      background-size: 14/2px 26/2px;
-      width: 7px;
-      height: 13px;
-      margin-top: 11px;
-      margin-left: 3px;
-    }
-    /*black >*/
-    .bg2 {
-      width: 7px;
-      height: 13px;
-      background: url("../img/more@2x.png") 0 0 no-repeat;
-      background-size: 14/2px 26/2px;
-      margin-top: 11px;
-      margin-left: 3px;
-    }
-    /*span 26 black*/
-    .bla {
-      font-size: 0.722rem;
-      color: #333 !important;
-    }
-    /*span 30 black*/
-    .blan {
-      color: #333 !important;
-    }
   }
+}
 
-  .red {
-    color: red !important;
-  }
+.red {
+  color: #e61734 !important;
+}
+
 /*普通剪发简介*/
-.tex{
+.tex {
   width: 100%;
   background-color: #fff;
   text-align: left;
-  padding:0 26px 26px 26px;
-  p{
+  padding: 0 26px 26px 26px;
+  p {
     margin-right: 26px;
     display: block;
     text-align: right;
   }
 }
-.addZ{
+
+.addZ, .logOff {
+  text-align: center;
   position: fixed;
   height: @foot;
   line-height: @foot;
   bottom: @foot;
   background-color: #fff;
   width: 100%;
-  z-index:1000;
-  a{
+  z-index: 1000;
+  a {
     color: @yellow;
+    display: block;
+    width: 100%;
   }
 }
 
-.media-left{
+/**/
+.media-left {
   outline: none;
 }

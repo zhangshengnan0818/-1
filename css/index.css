@@ -15,13 +15,18 @@
   padding-bottom: 20px;
 }
 .yy > p {
+  padding: 0;
   text-align: left;
-  padding-left: 30px;
   font-size: 0.833rem;
   color: #c39528;
   height: 39px;
   line-height: 39px;
   border-bottom: 1px solid #eee;
+}
+.yy > p a {
+  padding-left: 30px;
+  width: 100%;
+  display: inline-block;
 }
 .yy > p span {
   margin: 13.5px 24.5px 0 0;
@@ -41,4 +46,4 @@
 .yy > div span {
   font-size: 0.833rem;
 }
-(node:12236) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.
+(node:22180) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.

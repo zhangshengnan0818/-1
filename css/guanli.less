@@ -1,6 +1,33 @@
 @yellow: #c39528;
 @foot:98/2px;
 /*tab内容*/
+.tab-head{
+  width: 100%;
+  overflow-x: scroll;
+  ul{
+    width: 130*3px;
+    li{
+      float: left;
+      display: inline-block;
+      &.d3{
+        min-width: 130px;
+      }
+      a{
+        display: inline-block;
+        width: 100%;
+        height: 40px;//16px
+        line-height: 40px;
+      }
+    }
+    &:after{
+      content:"";
+      height:0;
+      visibility:hidden;
+      display:block;
+      clear:both;
+    }
+  }
+}
 .tab-content{
   .media{
     padding-top: 10px;

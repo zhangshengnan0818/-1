@@ -17,7 +17,7 @@
 }
 .modalContent {
   position: relative;
-  width: 275px;
+  width: 80%;
   margin: 0 auto;
   margin-top: 210px;
   text-align: center;
@@ -37,8 +37,6 @@
 .modalBody {
   height: 91px;
   line-height: 91px;
-  border-top: 1px solid #f5f5f5;
-  border-bottom: 1px solid #f5f5f5;
 }
 .modalBody input {
   height: 39px;
@@ -52,4 +50,4 @@
 .modalFoot a:first-child {
   border-right: 1px solid #f5f5f5;
 }
-(node:19820) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.
+(node:9344) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.
