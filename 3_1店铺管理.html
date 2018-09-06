@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/dianpubj.css">
   <link rel="stylesheet" href="css/modal.css"/>
-  <link rel="stylesheet" href="css/timeModal.css"/>
+  <link rel="stylesheet" type="text/css" href="css/mobileSelect.css">
 </head>
 <body>
 <!--时间 star-->
@@ -51,72 +51,6 @@
           <label for='7'>星期日</label>
         </div>
 
-      </div>
-      <div class="modalFoot">
-        <a href="#" class="cancel">取消</a>
-        <a href="#">保存</a>
-      </div>
-    </div>
-  </div>
-</div>
-<!--时间段 star-->
-<div class="modal" id="yytM"><!--全屏-->
-  <div class="modalDialog"><!--相对定位-->
-    <div class="modalContent">
-      <div class="modalHead">
-        <!--<span class="back"><a href="#" class=" dis">返回</a></span>-->
-        <span class="name">营业时段</span>
-        <!--<span class="cancel"><a href="javascript:;">取消</a></span>-->
-
-      </div>
-      <div class="modalBody">
-        <div class="tgroup">
-          <div class="tview">
-            <ul class="hL" id="hL1">
-            </ul>
-          </div>
-        </div>
-        <div class="tgroup">
-          <div class="tview">
-            <ul class="sL"  id="sL1">
-            </ul>
-          </div>
-        </div>
-        <div class="tgroup">
-          <div class="tview">
-            <ul class="hL" id="hL2">
-            </ul>
-          </div>
-        </div>
-        <div class="tgroup">
-          <div class="tview">
-            <ul class="sL" id="sL2">
-            </ul>
-          </div>
-        </div>
-        <!--<div id="starT">
-                  <div>
-                    <ul class="hL">
-                    </ul>
-                  </div>
-                  <div class="dian">:</div>
-                  <div>
-                    <ul class="sL">
-                    </ul>
-                  </div>
-                </div>
-                <div class="dian">-</div>
-                <div id="endT">
-                  <div class="dian">:</div>
-                  <div>
-                    <ul class="hL">
-                    </ul>
-                  </div>
-                  <div>
-                    <ul class="sL">
-                    </ul>
-                  </div>
-                </div>-->
       </div>
       <div class="modalFoot">
         <a href="#" class="cancel">取消</a>
@@ -246,7 +180,7 @@
 
 </div>
 <script src="js/jquery-1.11.3.js"></script>
-<script>
+<!--<script>
   var hHtml='';
   for(var i=0;i<24;i++){
     if(i<10){
@@ -284,16 +218,32 @@
     }
 
   })
-</script>
+</script>-->
+<script src="js/mobileSelect.min.js"></script>
 
 <script>
+  var hArr=['00','01','02','03','04','05','06','07','08','09','10','11','12','13','14','15','16','17','18','19','20','21','22','22','23'];
+  var sArr=['00','01','02','03','04','05','06','07','08','09','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59'];
+  var mobileSelect3= new MobileSelect({
+    trigger: '#yyt',
+    title: '营业时间段',
+    wheels: [
+      {data: hArr},
+      {data: sArr},
+      {data: hArr},
+      {data: sArr}
+    ],
+    position:[8, 0, 10, 0],
+    transitionEnd:function(indexArr, data){
+//      console.log(data);
+    },
+    callback:function(indexArr, data){
+      var str=`${data[0]}:${data[1]}-${data[2]}:${data[3]}`;
+      $("#yyt").html(str);
+    }
+  });
 
-  /*$.each(lis,function(i,item){
-    item[i].offset().top;
-    console.dir(item[i].offset().top);
-  })*/
 </script>
 <script src="js/modal.js"></script>
-<script src="js/timeS.js"></script>
 </body>
 </html>

@@ -157,7 +157,7 @@ function timeS() {
           if (curY <= 40 && curY >= -880) {
             $('#hL1').css("webkitTransform", webkitTransform);
           } else {
-            return false;
+            return ;
           }
         }
         else if (stx > (mdl + 9 * 3 + liw) && stx < (mdl + 9 * 2 + liw * 2)) {
@@ -166,15 +166,16 @@ function timeS() {
           if (curY <= 40 && curY >= -2320) {
             $('#sL1').css("webkitTransform", webkitTransform);
           } else {
-            return false;
+            return ;
           }
         }
         else if (stx > (mdl + 9 * 5 + liw * 2) && stx < (mdl + 9 * 5 + liw * 3)) {
           ety = parseInt(getT3d($('#hL2'), "y"));
           if (curY <= 40 && curY >= -880) {
             $('#hL2').css("webkitTransform", webkitTransform);
+            adC($('#hL2'));
           } else {
-            return false;
+            return ;
           }
         }
         else if (stx > (mdl + 9 * 7 + liw * 3) && stx < (mdl + 9 * 7 + liw * 7)) {
@@ -183,11 +184,11 @@ function timeS() {
           if (curY <= 40 && curY >= -2320) {
             $('#sL2').css("webkitTransform", webkitTransform);
           } else {
-            return false;
+            return ;
           }
         }
         else{
-          return false;
+          return ;
         }
 
         setTimeout(function(){
@@ -200,12 +201,9 @@ function timeS() {
       etx = curX;
       ety = curY;
     });
-    function adC() {
-      var lis = $('#sL2 li');
-      $.each(lis, function (i, item) {
-        item[i].position().top;
-        console.dir(item[i].position().top);
-      })
+    function adC(fa) {
+     var  nowC=getT3d(fa,"y");
+      console.log("adC:",nowC);
     }
 
     function getT3d(elem, ename) {
@@ -217,7 +215,8 @@ function timeS() {
       str1 = str1.replace("matrix(", "");
       str1 = str1.replace(")", "");
       var carr = str1.split(",");
-      //console.dir('carr:' + carr);
+      console.dir('carr:' + carr[5]);
+
       if (ename == "x") return carr[4];
       else if (ename == "y") return carr[5];
       else return "";

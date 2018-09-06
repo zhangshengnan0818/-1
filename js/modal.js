@@ -2,7 +2,7 @@
  * Created by Amh on 2018-09-04.
  */
 /*名称modal*/
-$('#yyt,#yyd').click(function () {
+$('#yyd').click(function () {
   $id=$(this).attr('id');
   //console.log(`#${$id}M`);
   $sel=`#${$id}M`;
@@ -14,5 +14,5 @@ $('#yyt,#yyd').click(function () {
     $modal.css("display", "none");
     $('body').css("position", 'static');/*关闭模态框禁止底部页面滚动*/
   });
-  timeS();
+  //timeS();
 });
