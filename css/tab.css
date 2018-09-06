@@ -25,4 +25,4 @@
   display: block;
   clear: both;
 }
-(node:23588) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.
+(node:19968) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.

@@ -115,4 +115,4 @@
   box-shadow: 0 4px 6px #e6e6e6;
   width: 140px;
 }
-(node:23628) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.
+(node:12204) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.

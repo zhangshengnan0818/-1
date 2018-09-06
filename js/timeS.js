@@ -144,18 +144,17 @@ function timeS() {
       //gundongX = event.originalEvent.changedTouches[0].pageX - stx;
       gundongY = event.originalEvent.changedTouches[0].pageY - sty;
       // 目标位置 就是 要移动的距离 加上 元素当前位置tray
-      //curY=parseInt((gundongY%step))*30+ety;
+      //curY=parseInt((gundongY%step))*40+ety;
       //webkitTransform = 'translate3d( 0px, ' + (curY) + 'px,0px)';
       if (isMove) {
         isMove = false;
-        curY = parseInt((gundongY % step)) * 30 + ety;
-        //console.log("curY:", curY);
+        curY = parseInt((gundongY % step)) * 40 + ety;
         webkitTransform = 'translate3d( 0px, ' + (curY) + 'px,0px)';
         if (stx > (mdl + 9) && stx < (mdl + 9 + liw)) {
           //console.log("1");
           ety = parseInt(getT3d($('#hL1'), "y"));
           //console.log("ety:", ety);
-          if (curY <= 30 && curY >= -660) {
+          if (curY <= 40 && curY >= -880) {
             $('#hL1').css("webkitTransform", webkitTransform);
           } else {
             return false;
@@ -164,7 +163,7 @@ function timeS() {
         else if (stx > (mdl + 9 * 3 + liw) && stx < (mdl + 9 * 2 + liw * 2)) {
           //console.log("2");
           ety = parseInt(getT3d($('#sL1'), "y"));
-          if (curY <= 30 && curY >= -1740) {
+          if (curY <= 40 && curY >= -2320) {
             $('#sL1').css("webkitTransform", webkitTransform);
           } else {
             return false;
@@ -172,7 +171,7 @@ function timeS() {
         }
         else if (stx > (mdl + 9 * 5 + liw * 2) && stx < (mdl + 9 * 5 + liw * 3)) {
           ety = parseInt(getT3d($('#hL2'), "y"));
-          if (curY <= 30 && curY >= -660) {
+          if (curY <= 40 && curY >= -880) {
             $('#hL2').css("webkitTransform", webkitTransform);
           } else {
             return false;
@@ -181,7 +180,7 @@ function timeS() {
         else if (stx > (mdl + 9 * 7 + liw * 3) && stx < (mdl + 9 * 7 + liw * 7)) {
           //console.log("4");
           ety = parseInt(getT3d($('#sL2'), "y"));
-          if (curY <= 30 && curY >= -1740) {
+          if (curY <= 40 && curY >= -2320) {
             $('#sL2').css("webkitTransform", webkitTransform);
           } else {
             return false;
@@ -193,7 +192,7 @@ function timeS() {
 
         setTimeout(function(){
           isMove=true;
-        },300);
+        },200);
       }
 
     });

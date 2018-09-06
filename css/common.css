@@ -645,4 +645,4 @@ div[class^="info"] .blan {
 .media-left {
   outline: none;
 }
-(node:9020) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.
+(node:14668) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.
