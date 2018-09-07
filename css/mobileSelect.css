@@ -126,8 +126,26 @@
   pointer-events: none;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  border-top: 1px solid #DCDCDC;
-  border-bottom: 1px solid #DCDCDC;
+  border-top: 1px solid #f7c756;
+  border-bottom: 1px solid #f7c756;
+  text-align: center;
+}
+.mobileSelect .content .panel .selectLine div {
+  color: #dcdcdc;
+  display: inline-block;
+  height: 40px;
+  line-height: 36px;
+}
+.mobileSelect .content .panel .selectLine .hx {
+  margin: 0 auto;
+}
+.mobileSelect .content .panel .selectLine .rd {
+  float: right;
+  margin-right: 24.5%;
+}
+.mobileSelect .content .panel .selectLine .ld {
+  float: left;
+  margin-left: 24.5%;
 }
 .mobileSelect .content .panel .shadowMask {
   position: absolute;
@@ -148,3 +166,4 @@
 .mobileSelect-show .content {
   bottom: 0;
 }
+(node:19588) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.

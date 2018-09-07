@@ -109,7 +109,7 @@
       <div class="info">
         营业时段
         <span class="bg2"></span>
-        <span class="bla" id="yyt">8：30-23：30</span>
+        <span class="bla" id="yyt">8：30 - 23：30</span>
       </div>
     </div>
     <!--服务-->
@@ -238,7 +238,8 @@
 //      console.log(data);
     },
     callback:function(indexArr, data){
-      var str=`${data[0]}:${data[1]}-${data[2]}:${data[3]}`;
+//      console.log(data);
+      var str=`${data[0]}：${data[1]} - ${data[2]}：${data[3]}`;
       $("#yyt").html(str);
     }
   });
